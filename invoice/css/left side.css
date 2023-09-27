@@ -1,0 +1,188 @@
+
+.color{
+    color: red;
+    color: rgb(214, 214, 214);/*light*/
+    color: rgb(138, 138, 138);/*dark*/
+    color: #5DB9D7;/*button*/
+    color:  rgb(31, 162, 214);;/*dark*/
+    
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+    /* width */
+    body::-webkit-scrollbar {
+        width: 10px;
+        
+       
+      }
+      
+      /* Track */
+      body::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+        border-radius: 10px;
+        
+      }
+       
+      /* Handle */
+      body::-webkit-scrollbar-thumb {
+        background: #5DB9D7; 
+        background-image: linear-gradient(to bottom,rgb(73, 73, 73),#5DB9D7,white); 
+        border-radius: 10px;
+        
+      }
+      
+      /* Handle on hover */
+      body::-webkit-scrollbar-thumb:hover {
+        background: #555; 
+        
+      } 
+
+
+/* side bar design*/
+.sidebar{
+    background: black;
+    width: 200px;
+    min-height: 100vh;
+    position: fixed;
+    z-index:99;
+}
+.left h4{
+    padding: 20px ;
+    color: white; 
+    background: rgb(48, 47, 47);
+    position: relative;
+    bottom: 20px;
+}
+
+.left{
+   padding-top: 20px;
+}
+
+.left ul{
+    list-style: none;
+    cursor: pointer;
+}
+.left li .fa1, .fa2, .fa3, .fa4, .fa5, .fa6, .fa7, .fa8, .fa9, .fa10{
+ display: none;
+}
+.left li .fa1 {
+
+font-size: smaller;position: relative; left: 82px;z-index: 999999999999;
+}
+.left li .fa2{
+
+font-size: smaller;position: relative; left: 49px;z-index: 999999999999;
+}
+.left li .fa3{
+
+font-size: smaller;position: relative; left: 84px;z-index: 999999999999;
+}
+.left li .fa4{
+
+font-size: smaller;position: relative; left: 57px;z-index: 999999999999;
+}
+.left li .fa5{
+
+font-size: smaller;position: absolute; left: 170px;transform: translateY(5px);
+}
+.left li .fa6{
+
+font-size: smaller;position: relative; left: 68px;
+}
+.left li .fa7{
+font-size: smaller;position: absolute; left: 170px;transform: translateY(5px);
+}
+.left li .fa8{
+
+font-size: smaller;position: relative; left: 61px;
+}
+.left li .fa9{
+
+font-size: smaller;position: relative; left: 52px;
+}
+.left li .fa10{
+
+font-size: smaller;position: relative; left: 70px;
+}
+.left li {
+    margin:0 8px;
+ padding: 6px 15px;
+ width: 150px;
+ 
+ border-radius:8px;
+}
+.left li:hover{
+    background: rgb(37, 37, 37);
+    border-radius:8px;
+    margin:0 8px;
+    padding: 6px 15px;
+    width: 150px;
+}
+.left li i{
+    padding-right: 20px;
+    width: 8px;
+    color :white;
+}
+.left li img{
+    padding-right: 12px;
+    position: relative;
+    top: 6px;
+    right: 3px;
+    width: 5px;
+}
+.left li a{
+    text-decoration: none;
+    font-size:small;
+    color: white;
+   
+
+}
+.left .btn{
+    position: fixed;
+    bottom: 0;
+    width: 200px;
+   
+}
+.btn span a{
+    color: white; 
+    background: rgb(65, 65, 65);
+    padding: 6px 47.3%;
+   font-size: 15px;
+  
+
+ 
+}
+
+ .btn span a .rotate {
+    transition: all .5s linear;
+    
+}
+ .btn span a .rotate.down {
+
+    transform:rotate(180deg);
+ 
+}
+/*end*/
+
+
+
+@media (max-width: 1465px) {
+ .main nav {
+
+       width: 100%;
+    }
+    .rt_nav {
+        
+        position: relative;
+        right: 5%;
+    }
+    .adm {
+        position: relative;
+        right: 5%;
+     
+    }
+  }

@@ -1,0 +1,255 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+body{
+    box-sizing: border-box;
+    font-family: poppins;
+
+    overflow-x: hidden;
+  
+   
+    
+}
+
+/*second step*/
+.new-add-3{
+    
+    position: absolute;
+    width: 180px;
+    margin: 8px ;
+    
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    transform: translateX(750px);
+    top: 130px;
+    border-radius: 10px ;
+    z-index: 1;
+    display: grid;
+    left: -600px;
+    
+   display: none ;/*none----------------------------------------------------------------------------------*/
+    cursor: pointer;
+}
+
+.new-add-3 details{
+    position: relative;
+    padding:8px 20px;
+}
+.new-add-3 summary{
+    font-size: 14px;
+    color: rgb(48, 48, 48); 
+}
+
+.new-add-3 a{
+    font-size: 12px;
+    border-radius: 8px;
+    color: rgb(65, 65, 65);
+}
+.new-add-3 a:hover{
+    font-size: 12px;
+    background-color: #5DB9D7;
+    border-radius: 8px;
+    color: black;
+}
+.new-add-5{
+    
+    position: absolute;
+    width: 240px;
+    height: 140px;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    transform: translateX(750px);
+    top: 125px;
+    border-radius: 10px 10px  ;
+    z-index: 9;
+    display: grid;
+    left: 300px;
+   display: none ;/*none----------------------------------------------------------------------------------*/
+    
+}
+
+.new-add-5 a{
+    font-size: 12px;
+    margin: 6px ;
+    padding:6px 20px;
+    border-radius: 8px;
+    color: black;
+}
+.new-add-5 span{
+    border: 1px solid rgb(236, 236, 236);
+  height: 0;
+ }
+.new-add-5 a:hover{
+    font-size: 12px;
+    background-color: #5DB9D7;
+    margin: 6px ;
+    padding:6px 20px;
+    border-radius: 8px;
+   
+    color: black;
+}
+.new-add-4tymall{
+    
+    position: absolute;
+    width: 230px;
+    height: 370px;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    transform: translateX(750px);
+    top: 125px;
+    border-radius: 10px 10px  ;
+    z-index: 1;
+    display: grid;
+    left: 320px;
+   display: none ;/*none----------------------------------------------------------------------------------*/
+    
+}
+.new-add-4tymall h3{
+    font-size: 14px;
+    color: rgb(158, 158, 158);
+    font-weight: 400;
+   text-transform: uppercase;
+   padding: 15px 20px;
+}
+.new-add-4tymall a{
+    font-size: 12px;
+    margin: 5px ;
+    padding:5px 15px;
+    border-radius: 8px;
+    color: black;
+}
+.new-add-4tymall span{
+   border: 1px solid rgb(236, 236, 236);
+ height: 0;
+}
+.new-add-4tymall a:hover{
+    font-size: 12px;
+    background-color: #5DB9D7;
+    margin: 5px ;
+    padding:5px 15px;
+    border-radius: 8px;
+   
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.total{
+    position: relative;
+    right: 100px;
+ 
+ }
+.second_step {
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    gap: 900px;
+    margin-top: 40px;
+}
+
+.second_step button{
+    padding:10px 15px;
+    border: none;
+    border-radius: 10px;
+    margin: 0 6px;
+}
+.dash_sec{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    justify-content:space-between; 
+    position: relative;
+}
+.dash_sec h2{
+    font-size: 18px;
+    color: rgb(73, 73, 73);
+    font-weight: 400;
+    padding-bottom: 8px;
+    transform: translateX(100px);
+}
+#dropdownBtntymall{
+    position: absolute;
+    bottom: 15px;
+    color: skyblue;
+    font-size: 13px;
+   left: 340px;
+   cursor: pointer;
+}
+.das_sec{
+    display: flex;
+    align-items: flex-end;
+    justify-content:flex-end; 
+    position: relative;
+    right: 100px;
+    bottom: 15px;
+    font-size: 15px;
+    font-weight: 400;
+   
+}
+
+
+/*third step*/
+.cus_three{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+.cus_three div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+  
+}
+/*fourth step*/
+.cus_four{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 60px;
+    padding-top: 30px;
+    
+}
+
+.cus_four img{
+    
+    padding-top: 30px;
+}
+.cus_four span p{
+    line-height: 30px;
+    color: rgb(48, 48, 48);
+}
+.cus_four span i{
+    color: skyblue;
+    padding-right: 10px;
+}
+/*fourth five*/
+.tym_five{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+    padding-top: 30px;
+    
+}
+.tym_five div i{
+    padding: 10px 6px;
+    font-size: 22px;
+    color: black;
+}

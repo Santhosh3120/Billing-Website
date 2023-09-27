@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <link rel="stylesheet" href="css/quoteadd.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="/css/left side.css">
+</head>
+<body>
+    <!--slide bar start-->
+    <div class="sidebar">
+        <div class="left">
+            <div>
+                <h4>LoGo</h4>
+            </div>
+            <ul>
+                <li id="fli1"><i class="fa-solid fa-house"></i><a href="index.html">Home</a><span class="fa1"><i class="fa-solid fa-circle-plus"></i></span></li>
+                <li id="fli2"><i class="fa-solid fa-user"></i><a href="customers.html">Customers</a><span class="fa2"><a href="customersadd.html"><i class="fa-solid fa-circle-plus add"></i></a></span></li>
+                <li id="fli3"><i class="fa-solid fa-bag-shopping"></i><a href="items.html">Items</a><span class="fa3"><a href="items add.html"><i class="fa-solid fa-circle-plus"></i></a></span></li>
+                
+            </ul>
+        </div>
+        <div class="left">
+            <ul>
+                <li id="fli4"  style="background: #5DB9D7;"><i class="fa-solid fa-calculator"></i><a href="estimates.html">Estimates</a><span class="fa4"><a href="quoteadd.html"><i class="fa-solid fa-circle-plus"></i></a></span></li>
+                <li id="fli5"><i  class="fa-solid fa-truck "></i><a href="delivery chellans.html">Delivery Chellans</a><span class="fa5"><a href="delivery challan add.html"><i class="fa-solid fa-circle-plus"></i></a></span></li>
+                <li id="fli6"><i class="fa fa-file" aria-hidden="true"></i><a href="invoice.html">Invoices</a><span class="fa6"><a href="invoiceadd.html"><i class="fa-solid fa-circle-plus"></i></a></span></li>
+                <li id="fli7"><i class="fa-solid fa-file-arrow-down"></i><a href="payment recived.html">Payment Recived</a><span class="fa7"><a href="#"><i class="fa-solid fa-circle-plus"></i></a></span></li>
+            </ul>
+        </div>
+        <div class="left">
+            <ul>
+         
+                <li id="fli8"><i class='fas fa-receipt'></i><a href="expences.html">Expenses</a><span class="fa8"><a href="expences add expence.html"><i class="fa-solid fa-circle-plus"></i></a></span></li>
+            </ul>
+        </div>
+        <div class="left">
+            <ul>
+                <li id="fli9"><i class="fa-solid fa-calendar-days"></i><a href="timesheet project.html">Timesheet</a><span class="fa9"><a href="timesheet  add.html"><i class="fa-solid fa-circle-plus"></i></a></span></li>
+                <!--  <li><img src="https://img.icons8.com/material-sharp/24/null/math-book.png"/><a href="gst filling.html">GST Filing</a></li>-->
+                <li id="fli10"><i class="fa-sharp fa-solid fa-square-poll-vertical"></i><a href="report.html">Reports</a><span class="fa10"></span></li>
+          
+            </ul>
+        </div>
+        <div class="left">
+            <div class="btn">
+                <span><a href="#"><div class="fa-solid fa-chevron-left rotate"></div></a></span>
+            </div>
+        </div>
+        </div>
+ <!--slide bar end-->
+
+
+
+
+
+
+
+
+
+
+ <!--home-right-->
+<div class="right">
+<div class="main" style="background: rgb(255, 250, 250);">
+     <!--nav-->
+     
+     <nav>
+         <a href="#"><i style="z-index: 99; position: absolute;left: 20px;top: 17px;color: black; " class="fa-solid fa-clock-rotate-left"></i></a>
+         <div class="lf_nav">
+            
+            <span style="font-size:small ;" class=" fa fa-search"> </span>
+            <a href=""><span class="fa-solid fa-chevron-down"></span></a>
+            <a href="">|</a>
+            <input type="search" placeholder="Search in Customers (/)">
+        </div>
+
+         <!--dropdown and bars top + icon -->  
+        <div class="rt_nav" >
+         
+            <span>
+                <div class="cont" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="dropdown  dropDown-content" id="myDropdown" onclick="myFunction()">
+                        <div class="quick-create-1">
+                            <p><img src="https://img.icons8.com/fluency-systems-regular/14/null/four-squares.png"/> GENERAL</p>
+                            <p><img src="https://img.icons8.com/ios/14/null/checkout.png"/> SALES</p>
+                            <p  style="position: relative;left: 75px;"><img src="https://img.icons8.com/small/14/null/bag-front-view.png"/> PURCHASES</p>
+                        </div>
+                        <div class="quick-create-2">
+                            <div class="sub-quick">
+                                <a href="#"><i class="fa-solid fa-plus"></i> Add Users</a>
+                                <a href=""><i class="fa-solid fa-plus"></i>  Item</a>
+                                <a href=""><i class="fa-solid fa-plus"></i> Log Time</a>
+                                <a href=""><i class="fa-solid fa-plus"></i> Weekly Log</a>
+                            </div>
+                            <div class="sub-quick">
+                                <a href=""><i class="fa-solid fa-plus"></i> Customer</a>
+                                <a href=""><i class="fa-solid fa-plus"></i> Estimates</a>
+                                <a href=""><i class="fa-solid fa-plus"></i> Delivery Challan</a>
+                                <a href=""><i class="fa-solid fa-plus"></i> Invoices</a>
+                                <a href=""><i class="fa-solid fa-plus"></i> Recurring Invoices</a>
+                                <a href=""><i class="fa-solid fa-plus"></i> Customer Payment</a>
+                            </div>
+                            <div class="sub-quick">
+                                <a href=""><i class="fa-solid fa-plus"></i> Expenses</a>
+                                <a href=""><i class="fa-solid fa-plus"></i> Recurring Expenses</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </span>
+
+
+
+<!--dropdown and bars top notification icon --> 
+            <div class="notify">
+                <div class="notify_background">
+                    <div class="notify_sub">
+                        <div class="notify_sub1">
+                        <p>Notifications</p>
+                        <i style="cursor: pointer;" class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="notify_sub2">
+                        <a href="" class="notify_sub3">Organization</a>
+                        <a href=""  class="notify_sub4">Announcements</a>
+                    </div>
+                    </div>
+                    <div class="notify_sub5">
+                        <img src="https://img.icons8.com/external-nawicon-detailed-outline-nawicon/130/null/external-mailbox-communication-nawicon-detailed-outline-nawicon-2.png"/>
+                        <span style="font-size: 16px;display: flex;align-items: center;justify-content: center;">Uhh... There are no notifications at the moment.</span>
+                    </div>
+                </div>
+            </div>
+
+<!--dropdown and bars top settings icon --> 
+<div class="set">
+    <div class="set_background">
+        <div class="set_sub">
+            <div class="set_sub1">
+            <p>Settings</p>
+            <i style="cursor: pointer;" class="fa-solid fa-xmark"></i>
+        </div>
+    
+          
+        </div>
+        <div class="set_sub2">
+            <span style="font-size:small  ;"  class=" fa fa-search"> <input type="search" placeholder=" Search Settings"> </span>
+                           
+                       </div>
+        
+        <div class="set_sub3">
+            <div >
+                <a href=""><img src="https://img.icons8.com/external-outline-berkahicon/12/null/external-Papers-bookkepping-outline-berkahicon.png"/> Organization Profile</a>
+                <a href=""><img src="https://img.icons8.com/windows/12/null/user-male-circle.png"/> Users & Roles</a>
+                <a href=""><img src="https://img.icons8.com/external-kmg-design-basic-outline-kmg-design/12/null/external-option-ui-essential-kmg-design-basic-outline-kmg-design.png"/>Preferences</a>
+            </div>
+            <div>
+                <a href=""><img src="https://img.icons8.com/ios/12/null/us-dollar-circled--v1.png"/> Currencies</a>
+                <a href=""><img src="https://img.icons8.com/fluency-systems-regular/12/null/divide-2.png"/> Taxes</a>
+            </div>
+            <div>
+                <a href=""><img src="https://img.icons8.com/pulsar-line/12/null/tax.png"/>Expense Category</a>
+            </div>
+            <div>
+                <a href=""><img src="https://img.icons8.com/windows/12/null/paint-palette-with-brush.png"/>Templates</a>
+                <a href=""><img src="https://img.icons8.com/ios/12/null/new-post--v1.png"/> Emails</a>
+                <a href=""><img src="https://img.icons8.com/ios/12/null/sms.png"/> SMS Notification</a>
+                <a href=""><img src="https://img.icons8.com/ios/12/null/appointment-reminders--v1.png"/> Reminders</a>
+                <a href=""><img src="https://img.icons8.com/ios/12/null/monitor--v1.png"/> Online Payments</a>
+                <a href=""><img src="https://img.icons8.com/external-vitaliy-gorbachev-lineal-vitaly-gorbachev/12/null/external-plug-internet-technology-vitaliy-gorbachev-lineal-vitaly-gorbachev.png"/>Integrations</a>
+            </div>
+            <div>
+                <a href=""><img src="https://img.icons8.com/sf-ultralight/12/null/data-backup.png"/> Data Backup</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--dropdown and bars top my account icon --> 
+<div class="my-account">
+<div class="my-account1">
+    <div class="cross">
+        <img src="https://img.icons8.com/ios/16/null/delete-sign--v1.png"/>
+    </div>
+    <div class="dis-pic"></div>
+    <div class="user-info">
+        <span><small>VEERESHWARAN</small></span>
+        <span><p>USER ID: 60002638836</p> </span>
+        <span><p>Organization ID: 60020978177</p></span>
+        <span><h6>bharathiwebcreation@gmail.com</h6></span>
+        <div class="my-sign">
+            <a style="color: rgb(70, 151, 184);" href="">My Account</a>
+            <img style="opacity: 0.5;" src="https://img.icons8.com/material-outlined/20/null/vertical-line.png"/>
+            <a style="color: red;" href="">Sign Out</a>
+        </div>
+    </div>
+</div>
+
+<div class="my-account2">
+    <small style="color: rgb(148, 148, 148);">MY ORGANIZATIONS</small>
+    <a href=""><img src="https://img.icons8.com/external-tanah-basah-detailed-outline-tanah-basah/15/000000/external-setting-user-interface-tanah-basah-detailed-outline-tanah-basah.png"/> Manage</a>
+</div>
+
+<div class="my-account3"> 
+    <div class="comp">
+        <img src="https://img.icons8.com/ios/20/null/sort--v1.png"/>
+    </div>
+    <div class="org">
+        
+        <span><small>Bharathi Web Creation Pvt LTd.,</small></span>
+        <span><p>Organization ID: 60020978177 <img style="padding: 3px;transform: translateY(5px);" src=" https://img.icons8.com/windows/15/null/copy.png"/></p></span>
+        
+    </div>
+    <div class="tick">
+        <img src="https://img.icons8.com/color/22/000000/tiktok-verified-account.png"/>
+    </div>
+</div>
+
+
+
+
+
+</div>
+
+
+<!--dropdown and bars--> 
+            <span><img style="opacity: 0.3;" src="https://img.icons8.com/material-outlined/20/null/vertical-line.png"/></span>
+            <span><a href="#"><img src="https://img.icons8.com/fluency-systems-regular/20/null/appointment-reminders--v1.png"/></a></span>
+            <span><a href="#"><img src="https://img.icons8.com/material-rounded/20/null/settings.png"/></a></span>
+            <span><a href="#"><img src="https://img.icons8.com/material-outlined/20/null/help.png"/></a></span>
+            <span><img style="opacity: 0.3;" src="https://img.icons8.com/material-outlined/20/null/vertical-line.png"/></span>
+            <span><a href="#" style="width: 200px;"></a></span>
+            <span ><a href="#"><img src="https://img.icons8.com/small/40/null/user-male-circle.png" style="
+                transform: translateX(100px);opacity: 0.3;"></a></span>
+        
+        
+    </div>
+</nav>
+
+<!--nav-->
+
+</div>
+
+<!--quoteadd-->
+
+<div class="quoteadd">
+    <form action="">
+<div class="head">
+    <img  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZklEQVR4nO2WUQqAMAxDc/9jtXiu+Csi28C0MsmD/I08WCkUMKaBAwAvSUFnrnTyligQcySughbPvuJpTrPkV+JQiFVwG3G+mGuLONRiFdxGnN7j38+4TczCC4QrjyoukBB0GoMhJy6pr6eYBuQpAAAAAElFTkSuQmCC">
+    <h1 style="color: rgba(0, 0, 0, 0.822); font-family: sans-serif; letter-spacing: 1px;  margin-left: 15px;"> New Quote</h1>
+    <button class="btnClose"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAi0lEQVR4nO3VMQ6AIAyF4f9ib9E7qVdWD6ExOhgTpLTg5FuY6BdCC/AnkAHoIgU49x91khEwA70TELBY9nshWQEvpFKgFJIXsEKKAjlItYAUpNrAvf9XYLrW6DwlMwLbtTZJ1/okzztQ8GXIAtSGcl2kKGRtU3mh0jlQKeQdNFmh6CTLAn3yM/7hLTtHBjH8yNmtagAAAABJRU5ErkJggg=="></button>
+</div>
+
+<div class="CustomerName">
+    <div class="userName">
+        <p style="color: red; font-weight: 400; opacity: 90%; padding-top: 5px;">Customer Name*</p>
+        <select name="" id="">
+            <option value="">NO Result Found</option>
+        </select>
+        <img style="background-color:#408DFB; opacity: 100%; border-radius:0 4px 4px 0 ; width: 25px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAABAElEQVR4nNXTPy9EQRSG8d8NYTvNFrQqFY2eT0BHglZFYVsi2Q9CKyFRb+cDKDRbb6IVCpX4t1YmOZKV2Lmzun2S27157pw57zCpLOMM93jHAzrYQjWOqEIbfdzhGDs4xDU+cYNmqbCNN+yPOMkKerhFo2TMfshyLOIZp3XC8xiz5I6S7AnTuVBawIkyljDAai70ir1C4WwIN3KhRxwUCudDuJ4LdaIaJeziA3O50Hb0LFWjbtwurur+WkVpe1GNUbILvGQyv2hGaX96lrY5g4V4Md2QfaGlkMZQzwZDX7qzyzhZa1xpYip6tom1PxbwL2kdrZAe1SbHIMnSK5sQvgGZ9DnQXcxCYAAAAABJRU5ErkJggg==">
+    </div>
+</div>
+
+<div class="innerQuote">
+    <form action="">
+<div class="quote">
+    <p style="color: red; font-weight: 400; opacity: 90%;padding-top: 5px;">Quote#</p><input type="text" placeholder="QT-000001" >
+    <div class="quoteSettingsIcon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA4UlEQVR4nJ3TTUoDQRAF4M8buIw/kKDeIApewVxAISJRwWuIxL2zjAuTk0TxZlKhGsKkk1EfNEzVq6qm+r1hOy7xhAv/wBxDfPymeIRv3OIkm8uQAcbJX9Wal9jDBC84zPwRprhP/rPWfJMFu/CA6xpxhuf83keDGd4yDryir/Wq8zy9zDVrRYOMA8dYZG30reSIV13HrCMeZp/znBQTD5Js8kb58u2bF239Tys7v3ftXBD63tmNSeq9ga/U8XGLzpEPPuo2EM4JA4SOsWexZXFY5IOvOqyN4u1i0z+h86/6ASKmKHfNBHghAAAAAElFTkSuQmCC">
+    </div>
+    </div>
+
+<div class="Reference">
+    <p style="color: black; font-weight: 500; padding-top: 5px;">Reference#</p><input type="text">
+</div>
+
+<div class="quoteDate">
+<p style="color: red; font-weight: 400; opacity: 90%;padding-top: 5px;">Quote Date</p>
+<input type="date"> <p style="color: black; font-weight: 500; padding-top: 5px; padding-left: 25px;  display: flex ; align-items: center;">Expiry Date</p>
+<input type="date" class="date2">
+</div>
+<p style="padding-left: 210px; font-size: 10.5px; color: black; font-weight: bold; width: 310px; ">To create transaction dated before 01/07/2017,<a href="">click here
+</a></p>
+</div>
+
+<div class="Salesperson">
+    <div class="Salesperson1">
+        <p style="color: black; font-weight: 600; padding-top: 5px; ">Salesperson</p><select name="" id="">
+            <option value=""></option>
+            <option value=""></option>
+        </select>
+    </div>
+    <div class="Salesperson2">
+        <p style="color: black; font-weight: 600; padding-top: 5px; ">Project Name</p><select name="" id="">
+            <option value=""></option>
+            <option value=""></option>
+        </select>
+    </div>
+
+    <p style="padding-left: 226px; font-size: 11px; color: black; font-weight: 500; width: 310px; ">Select a customer to associate a project.</p>
+
+</div>
+
+<div class="Subject">
+    <p style="color: black; font-weight: 600; padding-top: 5px; ">Subject</p><textarea></textarea>
+</div>
+
+<div class="iteamDetails">
+
+    <div class="iteamDetailsSub">
+        <div class="iteamDetailsSub2">
+
+            <div class="details" style="width: 990px;">
+                <h4>ITEM DETAILS</h4><br><input type="text" style=" margin-left: 15px; height: 50px; width: 450px; border: 1px solid #EBEAF2; outline: none;"></textarea>
+               </div>
+
+      
+       
+         
+       
+        <div class="quantity">
+           <h4>QUANTITY </h4><br><span class="inputQuantity"><input type="text"  value="0.00" ></span>
+          </div>
+
+          <div class="rate">
+            <h4>RATE</h4><br><span class="inputRate"><input type="text"  value="0.00" ></span>
+           </div>
+           
+           <div class="discount">
+            <h4>DISCOUNT</h4><br><span class="inputDiscount" ><input type="text"  value="0.00" > <select style="height: 20px; background-color: whitesmoke; border: none; outline: none; color: gray;"><option value="">%</option> <option value="">₹</option></select></span>
+           </div>
+
+           <div class="amount">
+            <h4>AMOUNT</h4><br><div class="amt">00.0</div>
+           </div>
+
+        
+      
+           <button class="clone"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAlUlEQVR4nLXSQQ4BQRCF4S/hDo5gS6ysuAXWxnpmI3bCGUjEbDiqtMxGZ6aE8JK36crfXdX1+IP6WGGXeYv5O/iAApMWXzCL4HtQG6OM4FtQG6HKZzyixvRTeIn1ty9XzeFP4DOGHXCBRQQPcMI1c409ehGcKwxG2eyvS9Henzen5LQlatO0GipFLmU3z3P6nJcZf6IHWF0dOVMdcHgAAAAASUVORK5CYII="></button>
+           <button class="closeBtn"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAuklEQVR4nLWSSw6CQBBEXzCRA7DSk+Bv7eck6g39XENkzU4voSlTJBMcwAXWpqCbmp6qBv6EFJiaf8YKuAAPoDCfgWWf8AjcgTWQuCbeuH7omqgPspZ+5v4i1rx6Iubcz3lQ3wKnpjC1tyQQVLZRBQeNgCcwDsVK9dY4UP5eEZ8FMBlsMl6PUu3yvIt5xnsse9IugXlL/+NP61CquqIg1kQJ923CGtqjriZv9R+m91mfMIRCUapf4QyCN3BtJvQ8TkRBAAAAAElFTkSuQmCC"></button>
+
+</div>
+
+<div class="add1">
+    <button class="add" style="width: 150px; border: none; margin-left: 20px; text-align: center;display: flex; justify-content: center; align-items: center; ">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAACPElEQVR4nO1VTU8TURQdSgmGpWT8COi8aevChLhhC4EZ3zAN+hMMW2RhXGii/gJNVCILJNOZN1ODHxGIuioLfgKaUuOeNrYJGmWlM2lJeOaMYgr0tdPCkpu83Nz2vXty7scZSTqx47Tk6PwFVbMeENPNE+psq7pdg0ec0Oz7qbHMYMfJlTHvlGKwZyq1A3lmNeh78pnH3SKPvaqEHrF8Mxfgf0Kd2VR6rrctgITx/IxisMLZqQ9+/EWJSyvfhSeeLfFzU+99hTobqREmt8Og0H97rSYt70/YvfiV97ibod8HtvyN999aqxLK8pEYoURggIf1ibqWtnhSt3Yvp9kOPOKDQGBEqP20dZOpHTQqUdfbLZ7UrN0vpV+hR3yodF6Rq9Txmw4DpghNblT7KCA48vSqnxjP3BOXynQ3MDVHAel7XOBK2vskBCGUbWM8wya/LIc9SIxbfO9cuZ7dAQh8/e+4h/t4h8EglP0Ul0u3a7E3lf/1HZr0qkja6gxNelXcx7vY6wpXtUytCRMnGpNrnpgJ2+TEcH6IQUyWP5aemOyjEARaJM/kjjxdRLPuCkEw3+GeZDvck2yRq1dt/+KodV4I8rcv7iw2t6ONv/Hut2LYj5oChGzSc70QO2jRQaDuxfI/7So31q4Jtj48bPW0BAmBRpgMsQOjvdEUq3AxZACAwQn7dCSAekYQO2iRPJ0LMDVgge8JPGI0GT0g1HkYmUEju6QvDECLIBXYZCwavGJ666pu3WnZ5BOT2rQ//CnN4+EOfdMAAAAASUVORK5CYII=">
+   Add another line
+    </button><select name="" id=""></select>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="customerNotes1">
+<div class="leftNote">
+<p>Customer Notes</p>
+<textarea style="height: 50px; width: 400px; padding: 10px; outline: none; max-width: 500px; max-height: 70px;" value="" placeholder="Looking forward for your business"></textarea>
+
+
+
+</div>
+
+
+<div class="rightTotal">
+<div class="SubTotal">
+<p>Sub Total</p> <span>0.00</span>
+</div>
+
+<div class="Adjustment"> 
+    <div class="adjustmentInput">
+        <input type="text" class="subInpu1" value="Adjustment ">
+        <input type="text" class="subInpu2">
+    </div>
+    <span style="align-self: center;">0.00</span>
+</div>
+<div class="TcsBox">
+    <div class="tcs">
+        <p>TCS</p> <select></select>
+    </div>
+    <span style="align-self: center;">0</span>
+</div>
+<div class="total">
+    <h3>Total(₹)</h3> <h3><span style="align-self: center;">0.00</span></h3>
+</div>
+
+
+</div>
+
+</div>
+<div class="checkAllow"> <input type="checkbox"> <p>Use this in future for all quotes of all customers.</p></div>
+
+<div class="termsConditions">
+
+<div class="conditionLeft">
+    <p>Terms & Conditions</p>
+    <textarea placeholder="Enter the terms and condition of your business to be displayed in our transation"></textarea>
+
+</div>
+<div class="conditionRight">
+    <p style="font-size:13px ;"> Attach File(s) to Quote</p>
+    <div class="uploadInput" >
+    <button style="border-radius: 0 4px 4px 0; border: 1px dashed gray;height: 25px;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAyklEQVR4nL3OPQrCQBAF4PWnEAQrQbAwqHF35s0mtV0aW8HGA9gJHkAv4T2stLbTM6i9R5EQhNWEsCn0wcDw4BtGqYIYY/pa666qmljroYCewvSw1va8IYCBgK7CvAdoB/Al/cIfiowB2jDzwlpNXgcArKJoMsr2DKd7ZEz03r3i4srB3/BSqYYHrudgHMdtgA5uZ5nXImbudgI65XAYhh2Aj24XBEErSZLmxzfMZy9clN9gAd0B2paNgG9FR2uWKGHmWdkQ0fRbvgAHvD1oPFC3xgAAAABJRU5ErkJggg=="></button>
+<select style="width: 100px; height: 25px;  border: 1px dashed gray; outline: none; "><option >Attach from Desktop</option> <option>Attach from Cloud</option></select>
+</div>
+<p>You can upload a maximum of 3 files, 5MB each</p>
+
+</div>
+</div>
+
+
+
+</div>
+
+<div class="additional">
+    <p>Additional Fields: Start adding custom fields for your quotes by going to Settings &#x27A1;Preferences&#x27A1; Quotes.</p>
+</div>
+
+
+
+</form>
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<script src="/js/left side.js"></script>
+    <script src="/js/index.js"></script>
+</body>
+<script>
+    /*line 88 script (bar)*/
+    function myFunction(x){
+        x.classList.toggle("rot")
+    }
+     /*line 91 script (dropdown)*/
+
+     function myFunction(){
+        document.getElementById().classList.toggle("show")
+     }
+</script>
+</html>

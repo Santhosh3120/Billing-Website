@@ -1,0 +1,297 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+body{
+    box-sizing: border-box;
+    font-family: poppins;
+
+    overflow-x: hidden;
+  
+   
+    
+}
+
+/*second step*/
+
+.new-add-3{
+    
+    position: absolute;
+    width: 180px;
+    height: 120px;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    transform: translateX(750px);
+    top: 130px;
+    border-radius: 10px ;
+    z-index: 1;
+    display: grid;
+    left: -730px;
+   display: none;/*none----------------------------------------------------------------------------------*/
+
+}
+.new-add-3 a{
+    font-size: 12px;
+    margin: 5px ;
+    padding:6px 20px;
+    border-radius: 8px;
+   
+    color: black;
+}
+.new-add-3 a:hover{
+    font-size: 12px;
+    background-color: #5DB9D7;
+    margin: 5px ;
+    padding:6px 20px;
+    border-radius: 8px;
+   
+    color: black;
+}
+.new-add-5{
+    
+    position: absolute;
+    width: 220px;
+    height: 260px;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    transform: translateX(750px);
+    top: 125px;
+    border-radius: 10px 10px  ;
+    z-index: 1;
+    display: grid;
+    left: 250px;
+   display: none ;/*none----------------------------------------------------------------------------------*/
+    
+}
+
+.new-add-5 a{
+    font-size: 12px;
+    margin: 6px ;
+    padding:6px 20px;
+    border-radius: 8px;
+   
+    color: black;
+}
+.new-add-5 span{
+    border: 1px solid rgb(236, 236, 236);
+  height: 0;
+ }
+.new-add-5 a:hover{
+    font-size: 12px;
+    background-color: #5DB9D7;
+    margin: 6px ;
+    padding:6px 20px;
+    border-radius: 8px;
+   
+    color: black;
+}
+.new-add-4tympro{
+    
+    position: absolute;
+    width: 230px;
+    height: 370px;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    transform: translateX(750px);
+    top: 125px;
+    border-radius: 10px 10px  ;
+    z-index: 1;
+    display: grid;
+    left: 320px;
+   display: none ;/*none----------------------------------------------------------------------------------*/
+    
+}
+.new-add-4tympro h3{
+    font-size: 14px;
+    color: rgb(158, 158, 158);
+    font-weight: 400;
+   text-transform: uppercase;
+   padding: 15px 20px;
+}
+.new-add-4tympro a{
+    font-size: 12px;
+    margin: 5px ;
+    padding:5px 15px;
+    border-radius: 8px;
+    color: black;
+}
+.new-add-4tympro span{
+   border: 1px solid rgb(236, 236, 236);
+ height: 0;
+}
+.new-add-4tympro a:hover{
+    font-size: 12px;
+    background-color: #5DB9D7;
+    margin: 5px ;
+    padding:5px 15px;
+    border-radius: 8px;
+   
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.total{
+    position: relative;
+    right: 100px;
+ 
+ }
+.second_step {
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    gap: 900px;
+    margin-top: 40px;
+}
+
+.second_step button{
+    padding:10px 15px;
+    border: none;
+    border-radius: 10px;
+    margin: 0 6px;
+}
+.dash_sec{
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    justify-content:space-between; 
+    position: relative;
+}
+#dropdownBtntympro{
+    position: absolute;
+    bottom: 15px;
+    color: skyblue;
+    font-size: 13px;
+    left: 220px;
+    cursor: pointer;
+}
+.dash_sec h2{
+    font-size: 18px;
+    color: rgb(73, 73, 73);
+    font-weight: 400;
+    padding-bottom: 8px;
+    transform: translateX(120px);
+}
+.das_sec{
+    display: flex;
+    align-items: flex-end;
+    justify-content:flex-end; 
+    position: relative;
+    right: 100px;
+    bottom: 15px;
+    font-size: 15px;
+    font-weight: 400;
+   
+}
+
+/*third step*/
+.cus_three{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+.cus_three div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+  
+}
+/*fourth step*/
+.cus_four{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 60px;
+    padding-top: 30px;
+    
+}
+
+.cus_four img{
+    
+    padding-top: 30px;
+}
+.cus_four span p{
+    line-height: 30px;
+    color: rgb(48, 48, 48);
+}
+.cus_four span i{
+    color: skyblue;
+    padding-right: 10px;
+}
+/*step five*/
+.tym_five{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+    padding-top: 60px;
+    
+}
+.tym_five div{ 
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+ 
+    
+}
+.tym_five div i{
+    padding: 10px 6px;
+    font-size: 22px;
+    color: black;
+    
+}
+.tym_a{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+   position: relative;
+   left: 30px;
+  
+   gap: 50px;
+   
+    padding-top: 30px;
+}
+.tym_b {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 60px;
+    line-height: 35px;
+  
+ 
+}
+.tym_b i{
+    
+   padding: 0 10px ;
+  
+ 
+}

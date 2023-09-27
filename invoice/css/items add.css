@@ -1,0 +1,217 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+body{
+    box-sizing: border-box;
+    font-family: poppins;
+
+    overflow-x: hidden;
+  
+   
+    
+}
+
+
+/*main class design*/
+.right{
+    position: relative;
+    left: 200px
+}
+
+.main{
+ height: 50px;   
+
+}
+
+.main nav{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 200px;
+   
+}
+
+.lf_nav{
+   
+    background-color:  rgb(245, 245, 245);
+    position: relative;
+    right: 565px;
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid rgb(231, 231, 231);
+    outline: none;
+}
+
+.lf_nav:hover{
+    border: 1px solid skyblue;
+}
+
+.lf_nav a  {
+  
+   color: gray;
+}
+.lf_nav a :nth-of-type(1) {
+   font-size:xx-small;
+    color: rgb(0, 217, 255);
+ }
+.lf_nav input{
+    border: none;
+    background-color: rgb(245, 245, 245);
+    outline: none;
+    
+}
+.rt_nav{
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+    
+
+}
+/*nav end */
+
+
+/*second step*/
+.save-cancel{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(241, 241, 241);
+    position: fixed;
+    bottom: 0;
+    box-shadow:  0 0 10px #c7c7c7;
+}
+.save-cancel button{
+    padding: 8px 15px;  
+    position: relative;
+    left: 115px;
+    top: 20px;
+    margin: 0 4px;
+   cursor: pointer;
+    border-radius: 5px;
+    border:1px solid rgb(184, 184, 184);
+    
+}
+.save-cancel button:hover{
+   
+    border:1px solid black;
+    
+}
+
+
+.total{
+   position: relative;
+ left: 100px;
+
+}
+.second_step {
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    gap: 900px;
+  
+}
+
+.second_step div:nth-of-type(2){
+    display: flex;
+ padding:20px;
+   
+}
+.second_step h2{
+    font-weight: 500;
+    color: black;
+}
+.second_step button{
+    padding:10px 15px;
+    border: none;
+    border-radius: 10px;
+    margin: 6px;
+}
+/*forms start*/
+.section-1, .section-2, .section-3{
+    position: relative;
+   left: 200px;
+ margin: 0 30px;
+ padding-top: 20px;
+ font-size: 13px;
+ color: #5e5e5e;
+}
+.go div{
+    display: inline-flex;
+    justify-content: space-around;
+    
+    position: relative;
+    left: 180px;
+    top: 8px;
+    
+}
+
+.u_name {
+    display: flex;
+    justify-content: flex-start;
+    gap: 189px;
+    padding: 15px 0;
+   
+}
+.unitt{
+    display: flex;
+    justify-content: flex-start;
+    gap: 194px;
+    padding: 15px 0;
+}
+.hs{
+    display: flex;
+    justify-content: flex-start;
+    gap: 170px;
+    padding: 15px 0;
+}
+.tx{
+    display: flex;
+    justify-content: flex-start;
+    gap: 132px;
+    padding: 15px 0;
+}
+.sel{
+    display: flex;
+    justify-content: flex-start;
+    gap: 150px;
+    padding: 15px 0;
+    
+}
+.des{
+    display: flex;
+    justify-content: flex-start;
+    gap: 162px;
+    padding: 15px 0;
+    
+}
+
+.section-3 h3{
+  font-size: 18px;
+  font-weight: 390;
+ 
+ 
+}
+.int1{
+    display: flex;
+    justify-content: flex-start;
+    gap: 140PX;
+   
+  }
+   .int2{
+    display: flex;
+    justify-content: flex-start;
+    gap: 110PX;
+   
+  }
+  .int1 div:nth-child(1){
+    border-bottom: 1px dotted solid black;
+   
+  }
+   .int2 div:nth-child(1){
+   border-bottom: 1px dotted rgb(129, 129, 129);
+   
+  }

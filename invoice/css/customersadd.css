@@ -1,0 +1,1238 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+body{
+    box-sizing: border-box;
+    font-family: Poppins;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+  
+   
+    
+}
+
+
+
+
+/*main class design*/
+.right{
+    position: relative;
+    left: 200px
+}
+
+.main{
+ height: 50px;   
+
+}
+
+.main nav{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 600px;
+   
+}
+
+.lf_nav{
+   
+    background-color:  rgb(245, 245, 245);
+    position: fixed;
+    right: 1100px;
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid rgb(231, 231, 231);
+    outline: none;
+
+}
+
+.lf_nav:hover{
+    border: 1px solid skyblue;
+    overflow: visible;
+    transition: 0.5s; 
+    padding-right: 50px;
+   
+}
+
+.lf_nav a  {
+  
+   color: gray;
+}
+.lf_nav a :nth-of-type(1) {
+   font-size:xx-small;
+    color: rgb(0, 217, 255);
+ }
+.lf_nav input{
+    border: none;
+    background-color: rgb(245, 245, 245);
+    padding: 5px ;
+    outline: none;
+    
+    
+}
+.rt_nav{
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+    
+
+}
+/*line 88 style (bar)*/
+.cont{
+    width: 22px;
+    height: 22px;
+    background: rgb(32, 184, 32);
+    border-radius: 5px;
+    z-index: 999;
+    bottom: 5px;
+    position: relative;
+ 
+    cursor: pointer;
+}
+.cont .bar1{
+    width: 2px;
+    height: 12px;
+    background: white;
+   position: absolute;
+   top: 5px;
+    transform: translate(10px);
+  transition: 0.4s;
+  z-index: 999;
+ 
+}
+.cont .bar2{
+    height: 2px;
+    width: 12px;
+    background: white;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+  transition: 0.4s;
+  z-index: 999;
+ 
+}
+.rot .bar1{
+    transform:translateX(10px)  rotate(45deg);
+}
+.rot .bar2{
+    transform: rotate(45deg);
+}
+/*dropdown*/
+.dropDown-content{
+    display: none;  /*none-----------------------------------------------------*/
+    width: 500px;
+    height: 300px;
+    background: #f1f1f1;
+    position: relative;
+    right: 200px;
+    top: 30px;
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.quick-create-1{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;  
+    color: rgb(155, 155, 155);
+   padding-top:10px ;
+   font-size: 13px;
+   padding-right: 110px;
+}
+.quick-create-1 img{
+  
+ opacity: 0.5;
+
+}
+.quick-create-2{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;  
+   padding-top:16px ;
+
+}
+.quick-create-2 a{
+    color: rgb(124, 124, 124);
+
+}
+.sub-quick{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start; 
+    flex-direction: column;
+    gap: 20px;
+    font-size: 12px;
+  
+}
+.sub-quick i{
+    font-size: 9px;
+    color: rgb(124, 124, 124);
+  
+}
+
+/* notification icon*/
+.notify{
+    display:none; /*none-----------------------------------------------------*/
+}
+.notify_background{
+ 
+    position: fixed;
+    top: 50px;
+    z-index: 1;
+    width: 380px;
+    height: 710px;
+    background: #f1f1f1;
+   
+}
+.notify_sub{
+    height: 110px;
+    background:rgb(233, 233, 233);
+}
+.notify_sub p{
+    font-size: 17px;
+    color: black;
+   
+}
+.notify_sub a{
+    font-size: 15px;
+    color: black;
+    border-bottom:3px solid blue;
+    
+}
+.notify_sub1{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 210px;
+    transform: translateY(30px);
+}
+.notify_sub2{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    position: relative;
+    left: 18px;
+    transform: translateY(60px);
+    
+}
+.notify_sub5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    transform: translateY(30px);  
+    text-align: center;    
+}
+
+
+/* settings icon*/
+
+.set{
+    display: none; /*none-----------------------------------------------------*/
+    position: fixed;
+    right: 0;
+    top: 50px;
+    justify-content: flex-end;
+    z-index: 1;
+}
+.set_background{
+     
+    width: 380px;
+    height: 710px;
+    background: rgb(243, 243, 243);
+   
+}
+.set_sub{
+    height: 110px;
+    background:rgb(233, 233, 233);
+}
+.set_sub p{
+    font-size: 17px;
+    color: black;
+   
+}
+
+.set_sub1{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 150px;
+    transform: translateY(20px);
+    
+}
+
+.set_sub2 span:hover{
+    border:2px solid skyblue;
+    
+ }
+.set_sub2 span{
+    
+    background-color: white;
+    transform: translateX(20px);
+    position: relative;
+    bottom: 50px;
+    border: 2px solid rgb(202, 202, 202);
+    border-radius: 8px ;
+    transition: 0.5s;
+}
+.set_sub2 .fa {
+    padding-left: 5px;
+}
+.set_sub2 input{
+    width:300px;
+    padding: 8px;
+   border: none;
+   outline: none;
+}
+
+.set_sub3 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transform: translateY(30px);  
+    text-align: center;    
+}
+.set_sub3 img{
+    padding: 2px 12px;
+    width: 14px;
+    opacity: 0.5;
+}
+.set_sub3 a{
+    font-size: 13px;
+    color: black;
+  padding: 8px 15px;
+    width: 340px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0;
+   transform: translateY(-50px);
+    line-height: 15px;
+    
+    
+}
+.set_sub3 a:hover {
+   background: skyblue;
+    
+    
+}
+/* my account icon*/
+
+.my-account{
+    display: none; /*none-----------------------------------------------------*/
+    position: fixed;
+    right: 0;
+    top: 50px;
+    justify-content: flex-end;
+    z-index: 1;
+    width: 380px;
+    height: 710px;
+    background: rgb(243, 243, 243);
+}
+.my-account1{
+    height: 250px;
+    background:rgb(236, 236, 236);
+    border-bottom: 1px solid rgb(226, 226, 226);
+}
+
+.cross{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: 20px;
+    right: 10px;
+}
+.dis-pic{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgb(177, 177, 177);
+   position: relative;
+   top: 10px;
+   margin: 0 auto;
+}
+.user-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 15px;
+}
+.user-info span p {
+    font-size: 11px;
+    color: rgb(99, 99, 99);
+    line-height: 20px;
+    font-weight: 400;
+}
+.user-info span h6 {
+    font-size: 9px;
+    color: rgb(99, 99, 99);
+    line-height: 20px;
+    font-weight: 400;
+}
+.my-sign{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.my-sign a{
+    font-size: 13px;
+    font-weight: 400;
+}
+.my-account2{
+    display: flex;
+    justify-content: space-around;
+    gap: 80px;
+    margin-top: 10px;
+    border-bottom:1px solid rgb(226, 226, 226);
+    padding-bottom: 10px;
+    
+}
+.my-account2 img{
+  transform: translateY(3px);
+    
+}
+.my-account2 a{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(70, 151, 184);
+}
+
+.my-account3{
+    display: flex;
+    justify-content: space-around;
+    gap: 8%;
+    padding: 15px;
+   
+    border-bottom:1px solid rgb(226, 226, 226);
+    background-color: rgb(238, 238, 238);
+}
+.org span p {
+    font-size: 11px;
+    color: rgb(99, 99, 99);
+    font-weight: 400;
+}
+.comp img{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    margin-top: 10px;
+}
+.tick{
+    padding-top: 15px;
+}
+/*nav end */
+/*customers plus */
+
+.customersPlus{
+    color: gray;
+    font-weight: 500;
+}    
+.head{
+    width: 100%;
+    border-bottom: 1px solid rgb(226, 223, 223);
+}
+
+h2{
+    margin: 20px;
+    font-weight: lighter;
+}
+.customerType{
+    margin-top: 25px;
+    margin-left: 20px;
+    display: flex;
+    font-weight: 500;
+    color: gray;
+    font-size: 13px;
+}
+p{
+margin-right: 70px;
+
+ font-weight: 500;
+padding-bottom: 1px gray;
+
+}
+.checkBoxInput input{
+    cursor: pointer;
+    color: gray;
+     font-weight: 500;
+
+}
+.checkBoxInput label{
+margin: 8px;
+}
+.CompanyName input{
+    color: gray;
+    font-weight: 500;
+
+}
+.PrimaryContact{
+    display: flex;
+    margin-top: 25px;
+    margin-left: 20px;
+    font-weight: 500;
+    color: gray;
+    font-size: 13px;
+}
+
+ .ContactName{
+    margin-right: 70px;
+    border-bottom:1px dashed black;
+    font-weight: lighter;
+   padding: 0;
+    }
+    
+ 
+
+.optionList{
+cursor: pointer;
+width: 280px;
+    height: 35px;
+    border: 1px solid #c7c7c7;
+    outline: none;
+    border-radius: 8px 8px;
+    padding: 0 2px;
+
+}
+.optionList option{
+    cursor: pointer;
+}
+.primaryContactInput input{
+    width: 280px;
+    height: 34px;
+    border: 1px solid #c7c7c7;
+    outline: none;
+    border-radius: 8px 8px;
+    padding: 0 2px;
+    margin-left: 5px;
+
+}
+.primaryContactInput input::placeholder{
+font-size: 13px;
+
+}
+
+.CompanyName{
+    display: flex;
+    margin-top: 25px;
+    margin-left: 20px;
+    font-weight: 500;
+    color: gray;
+    font-size: 13px;
+
+}
+.CompanyName p{
+
+}
+.inputContact{
+    width: 275px;
+    height: 35px;
+    border: 1px solid #c7c7c7;
+    outline: none;
+    border-radius: 8px 8px;
+    padding: 0 2px;
+}
+.CustomerDisplay{
+    display: flex;
+    margin-top: 25px;
+    margin-left: 20px;
+    font-weight: 500;
+    color: gray;
+    font-size: 13px;
+
+}
+.inputcustomer input{
+   
+    position: absolute;
+    left: 180px;
+    width: 280px;
+    height: 35px;
+    border: 1px solid #c7c7c7;
+    outline: none;
+    border-radius: 8px 8px;
+    padding: 0 2px;
+}
+.CustomerEmail{
+    display: flex;
+    margin-top: 25px;
+    margin-left: 23px;
+    font-weight: 500;
+    color: gray;
+    font-size: 13px;
+}
+.emailInput input{
+    width: 275px;
+    height: 35px;
+    border: 1px solid #c7c7c7;
+    outline: none;
+    border-radius: 8px 8px;
+    padding: 0 2px;
+}
+.CustomerPhoneNum{
+    display: flex;
+    margin-top: 25px;
+    margin-left: 20px;
+    font-weight: 500;
+    color: gray;
+    font-size: 13px;
+}
+
+.phoneNumInput input{
+    width: 280px;
+    height: 35px;
+    border: 1px solid #c7c7c7;
+    outline: none;
+    border-radius: 8px 8px;
+    padding: 0 2px;
+    
+}
+.phoneNumInput input::placeholder{
+    font-size: 13px;
+}
+.MobileInput{
+    margin-left: 15px;
+}
+.addMoreDetail{
+    margin-top: 25px;
+    margin-left: 20px;
+    font-weight: 500;
+}
+.Skype{
+    display: flex;
+    margin-top: 25px;
+    font-weight: 500;
+    color: gray;
+    font-size: 13px;
+}
+.skypeInput{
+    position: absolute;
+    left: 188px;
+    display: flex;
+    
+}
+.skypeInput input{
+    width: 255px;
+    height: 35px;
+    border: 1px solid #c7c7c7;
+    outline: none;
+    border-left: none;
+    border-radius: 0px 8px 8px 0;
+    padding: 0 2px;
+    
+}
+.skypeInput i{
+  color: rgb(88, 88, 88);
+  background-color: rgba(128, 128, 128, 0.596);
+  padding: 8px;
+  border-radius: 8px 0 0 8px;
+  
+
+}
+.Designation{
+    display: flex;
+    margin-top: 25px;
+    margin-left: 22px;
+    font-weight: 500;
+    color: gray;
+    font-size: 13px;
+}
+.designationInput{
+    margin-left: 23px;
+}
+.designationInput input{
+    width: 285px;
+    height: 35px;
+    border: 1px solid #c7c7c7;
+    outline: none;
+    border-radius: 8px 8px;
+    padding: 0 2px;
+}
+    
+
+.Department{
+    display: flex;
+    margin-top: 25px;
+    margin-left: 22px;
+    font-weight: 500;
+    color: gray;
+    font-size: 13px;
+}
+.departmentInput{
+    margin-left: 22px;
+}
+.departmentInput input{
+    width: 287px;
+    height: 35px;
+    border: 1px solid #c7c7c7;
+    outline: none;
+    border-radius: 8px 8px;
+    padding: 0 2px;
+}
+
+.Website{
+    display: flex;
+    margin-top: 25px;
+    margin-left: 22px;
+    font-weight: 500;
+    color: gray;
+    font-size: 13px;
+}
+.websiteInput{
+    margin-left: 42px;
+}
+.websiteInput input{
+    width: 285px;
+    height: 35px;
+    border: 1px solid #c7c7c7;
+    outline: none;
+    border-radius: 8px 8px;
+    padding: 0 2px;
+}
+
+
+
+
+.container2{
+   margin-top: 40px;
+   margin-left: 25px;
+   background-color: whitesmoke;
+   height: 40px;
+    font-weight: 500;
+   color: gray;
+   font-size: 13px;
+
+   border-bottom: 1px solid rgb(212, 212, 212);
+}
+.nav{
+    
+    padding: 13px;
+}
+.nav a{
+    margin: 10px;
+    color: gray;
+    cursor: pointer;
+}
+.nav a:hover{
+    border-bottom:2px solid blue ;
+    font-size: 15px;
+ 
+
+}
+.OtherDetsils{
+    display:none ;
+}
+
+.PAN{
+    display: flex;
+    margin-top: 25px;
+    margin-left: 30px;
+}
+.panInput{
+    margin-left: 29px;
+}
+.panInput input{
+    width: 280px;
+    height: 35px;
+    border: 1px solid #c7c7c7;
+    outline: none;
+    border-radius: 8px 8px;
+    padding: 0 2px;
+}
+.Currency{
+    display: flex;
+    margin-top: 25px;
+    margin-left: 27px;
+}
+.CurrencyInput select{
+    width: 295px;
+    height: 36px;
+    border: 1px solid #c7c7c7;
+    outline: none;
+    border-radius: 8px 8px;
+    padding: 0 2px;
+}
+.PaymentTerms{
+    display: flex;
+    margin-top: 25px;
+    margin-left: 27px;
+}
+.PaymentTermsInput{
+    
+}
+.PaymentTermsInput select{
+    width: 295px;
+    height: 35px;
+    border: 1px solid #c7c7c7;
+    outline: none;
+    border-radius: 8px 8px;
+    padding: 0 2px;
+}
+.EnablePortal{
+    display: flex;
+    margin-top: 25px;
+    margin-left: 27px;
+    margin-right: 0;
+}
+.enablePortalInput{
+    margin-left: 13px;
+    display: flex;
+    align-items: center;
+}
+.enablePortalInput input{
+    height: 20px;
+    width: 20px;
+    
+}
+.checkbox{
+margin-left: 7px;
+
+}
+.PortalLanguage{
+    display: flex;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 0;
+}
+.Facebook{
+    display: flex;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 0;
+}
+.FacebooklInpu{
+    margin-right: 20px;
+}
+.FacebooklInput input{
+    width: 290px;
+    height: 35px;
+    border: 1px solid #c7c7c7;
+    outline: none;
+    border-radius: 8px 8px;
+    padding: 0 2px;
+}
+
+.Twitter{
+    display: flex;
+    margin-top: 25px;
+    margin-left: 26px;
+    margin-right: 0;
+}
+.TwitterlInput input{
+    width: 280px;
+    height: 35px;
+    border: 1px solid #c7c7c7;
+    outline: none;
+    border-radius: 8px 8px;
+    padding: 0 2px;
+}
+
+
+.Address{
+    display: flex;
+   display: none;
+    
+}
+
+.billingAddress{
+  
+    width: 700px;
+    height: 500px;
+    margin-top: 5px;
+    margin-right: 5px;
+    overflow: hidden;
+}
+.billingAddress h5{
+    color: gray;
+    font-weight: 500;
+}
+.Attention{
+    display: flex;
+    margin-top: 25px;
+}
+.attentionInput input{
+    width: 280px;
+    height: 35px;
+    border: 1px solid #c7c7c7;
+    outline: none;
+    border-radius: 8px 8px;
+    padding: 0 2px;
+}
+.Country{
+    display: flex;
+    margin-top: 25px;
+}
+.countryInput select{
+    width: 280px;
+    height: 35px;
+    border: 1px solid #c7c7c7;
+    outline: none;
+    border-radius: 8px 8px;
+    padding: 0 2px;
+}
+.AddressForm{
+    display: flex;
+    margin-top: 25px;
+}
+.addressFormInput{
+    margin-left: 5px;
+    width: 265px;
+}
+.addressFormInput textarea{
+    width: 265px;
+    height: 60px;
+  
+    border: 1px solid #c7c7c7;
+    outline: none;
+    border-radius: 8px 8px;
+    padding: 0 2px;
+}
+.City{
+    display: flex;
+    margin-top: 15px;
+    
+}
+.cityInput{
+    margin-left: 30px;
+    
+}
+.cityInput input{
+    width: 280px;
+    height: 35px;
+    border: 1px solid #c7c7c7;
+    outline: none;
+    border-radius: 8px 8px;
+    padding: 0 2px;
+}
+
+
+.State{
+    display: flex;
+    margin-top: 15px;
+}
+.stateInput{
+    margin-left: 23px;
+}
+.stateInput select{
+    width: 280px;
+    height: 35px;
+    border: 1px solid #c7c7c7;
+    outline: none;
+    border-radius: 8px 8px;
+    padding: 0 2px;
+}
+.ZipCode{
+    display: flex;
+    margin-top: 15px;
+}
+.zipCodeInput1 input{
+    width: 280px;
+    height: 35px;
+    border: 1px solid #c7c7c7;
+    outline: none;
+    border-radius: 8px 8px;
+    padding: 0 2px;
+}
+.Phone{
+    display: flex;
+    margin-top: 25px;
+}
+.phoneInput{
+    margin-left: 15px;
+}
+.phoneInput input{
+    width: 280px;
+    height: 35px;
+    border: 1px solid #c7c7c7;
+    outline: none;
+    border-radius: 8px 8px;
+    padding: 0 2px;
+}
+.Fax{
+    display: flex;
+    margin-top: 20px;
+}
+.faxInput{
+    margin-left: 32px;
+}
+.faxInput input{
+    width: 280px;
+    height: 35px;
+    border: 1px solid #c7c7c7;
+    outline: none;
+    border-radius: 8px 8px;
+    padding: 0 2px;
+}
+.shippingAddress{
+    width: 700px;
+    height: 500px;
+    margin-top: 5px;
+    overflow: hidden;
+    
+}
+
+.countryInput2 select{
+    position: absolute;
+   left: 817px;
+   width: 280px;
+   height: 35px;
+   border: 1px solid #c7c7c7;
+   outline: none;
+   border-radius: 8px 8px;
+   padding: 0 2px;
+ 
+}
+.zipCodeInput2 input{
+    width: 280px;
+    height: 35px;
+    border: 1px solid #c7c7c7;
+    outline: none;
+    border-radius: 8px 8px;
+    padding: 0 2px;
+}
+.shippingAddress h5{
+    color: gray;
+    font-weight: 500;
+}
+.Note{
+    border-left: 5px solid rgb(255, 157, 9);
+    display: none;
+    
+}
+.text{
+    margin: 40px;
+    padding-bottom: 10px;
+}
+.text h4{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.text ul{
+    margin-left: 15px;
+}
+.ContactPersons{
+    height: 160px;
+    margin-bottom: 40px;
+    display: none;
+    
+}
+.ContactPersons1{
+    margin-top: 10px;
+    width: 1020px;
+   
+    height: 100px;
+    display: flex;
+    margin-bottom: 20px;
+}
+.content{
+    display: inline;
+}
+
+.ContactPersons h4{
+    display:inline-flex;
+    background-color:whitesmoke ;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    width: 145px;
+    height:27px ;
+    margin: 0;
+    border: 1px solid rgba(128, 128, 128, 0.521);
+}
+.ContactPersons p{
+    display:inline-flex;
+    width: 150px;
+    height: 27px;
+    margin: 0;
+    border: 1px solid rgba(128, 128, 128, 0.521);
+    cursor: text;
+    
+}
+.content p select{
+    width: 100%;
+    color: gray;
+    border: none;
+    cursor: pointer;
+
+}
+.ContactPersons p input{
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+}
+.ContactPersons .btn1{
+    margin-top: 35px;
+    margin-left: 5px;
+    background-color: white;
+    border: none;
+    height: 20px;
+    cursor: pointer;
+}
+.ContactPersons .btn2{
+   
+    margin-top: 34px;
+    cursor: pointer;
+    margin-left: 1px;
+    background-color: white;
+    border: none;
+    height: 20px;
+}
+.CustomFields{
+   
+    display: flex;
+ 
+    align-items: center;
+    text-align: center;
+    height: 300px;
+}
+.CustomFields p{
+    padding-bottom: 60px;
+    font-size: 13px;
+    color: gray ;
+}
+.Remarks{
+   display: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 300px;
+}
+.Remarks textarea{
+    width: 640px;
+    height: 80px;
+    border:1px solid rgba(128, 128, 128, 0.425); 
+    color: gray; padding: 3px;
+}
+.Remarks p{
+    font-weight: bolder;
+    color: gray;
+}
+.customersPlus input:hover{
+    border: 1px solid skyblue;
+    border-radius: 8px;
+}
+.customersPlus select:hover{
+    border: 1px solid skyblue;
+    border-radius: 8px;
+}
+.customersPlus textarea:hover{
+    border: 1px solid skyblue;
+    border-radius: 8px;
+}
+
+.customersPlus input:focus{
+    border: 1px solid white;
+    outline: 1px solid skyblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*second step*/

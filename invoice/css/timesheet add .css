@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+body{
+    box-sizing: border-box;
+    font-family: poppins;
+    overflow-x: hidden; 
+    
+}
+
+/*forms start*/
+
+.top-nwitem{
+    width: 500px;
+    height: 40px;
+  /*background-color: rgb(230, 230, 230) ;*/ 
+  /**/  background-color: rgb(105, 179, 202);
+    margin: 0 auto;
+    padding: 20px;
+}
+.nw-item{
+   /* background-color: rgb(245, 245, 245);*/
+    background-color: rgb(126, 188, 207);
+    width: 500px;
+    margin: 0 auto;
+    border-radius:0 0 10px 10px;
+    padding: 20px;
+    display: block;
+    
+}
+.section-1 label{
+    font-size: 13px;
+}
+.section-1 input{
+    font-size: 12px;
+    width: 475px;
+    height: 35px;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid rgb(190, 190, 190);
+    padding: 0 10px;
+ 
+}
+.go{
+    padding: 8px 0;
+}
+
+.go textarea{
+    border-radius: 8px;
+    outline: none;
+    padding: 8px 0 0 5px;
+    border: 1px solid rgb(190, 190, 190);
+}
+.go div a {
+    font-size: 12px;
+    text-decoration: none;
+    color: rgb(42, 163, 211);
+}
+.go div a img{
+    transform: translateY(4px);
+    
+}
+.buttons button{
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 8px;
+     border: 1px solid rgb(190, 190, 190)
+}

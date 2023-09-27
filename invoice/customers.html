@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <link rel="stylesheet" href="/css/customers.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="/css/left side.css">
+    <link rel="stylesheet" href="/css/nav.css">
+</head>
+<body>
+        <!--slide bar start-->
+        <div class="sidebar">
+            <div class="left">
+                <div>
+                    <h4>LoGo</h4>
+                </div>
+                <ul>
+                    <li id="fli1"><i class="fa-solid fa-house"></i><a href="index.html">Home</a><span class="fa1"><i class="fa-solid fa-circle-plus"></i></span></li>
+                    <li id="fli2" style="background: #5DB9D7;"><i class="fa-solid fa-user"></i><a href="customers.html">Customers</a><span class="fa2"><a href="customersadd.html"><i class="fa-solid fa-circle-plus"></i></a></span></li>
+                    <li id="fli3"><i class="fa-solid fa-bag-shopping"></i><a href="items.html">Items</a><span class="fa3"><a href="items add.html"><i class="fa-solid fa-circle-plus"></i></a></span></li>
+                    
+                </ul>
+            </div>
+            <div class="left">
+                <ul>
+                    <li id="fli4"><i class="fa-solid fa-calculator"></i><a href="estimates.html">Estimates</a><span class="fa4"><a href="quoteadd.html"><i class="fa-solid fa-circle-plus"></i></a></span></li>
+                    <li id="fli5"><i  class="fa-solid fa-truck "></i><a href="delivery chellans.html">Delivery Chellans</a><span class="fa5"><a href="delivery challan add.html"><i class="fa-solid fa-circle-plus"></i></a></span></li>
+                    <li id="fli6"><i class="fa fa-file" aria-hidden="true"></i><a href="invoice.html">Invoices</a><span class="fa6"><a href="invoiceadd.html"><i class="fa-solid fa-circle-plus"></i></a></span></li>
+                    <li id="fli7"><i class="fa-solid fa-file-arrow-down"></i><a href="payment recived.html">Payment Recived</a><span class="fa7"><a href="#"><i class="fa-solid fa-circle-plus"></i></a></span></li>
+                </ul>
+            </div>
+            <div class="left">
+                <ul>
+             
+                    <li id="fli8"><i class='fas fa-receipt'></i><a href="expences.html">Expenses</a><span class="fa8"><a href="expences add expence.html"><i class="fa-solid fa-circle-plus"></i></a></span></li>
+                </ul>
+            </div>
+            <div class="left">
+                <ul>
+                    <li id="fli9"><i class="fa-solid fa-calendar-days"></i><a href="timesheet project.html">Timesheet</a><span class="fa9"><a href="timesheet  add.html"><i class="fa-solid fa-circle-plus"></i></a></span></li>
+                    <!--  <li><img src="https://img.icons8.com/material-sharp/24/null/math-book.png"/><a href="gst filling.html">GST Filing</a></li>-->
+                    <li id="fli10"><i class="fa-sharp fa-solid fa-square-poll-vertical"></i><a href="report.html">Reports</a><span class="fa10"><i class="fa-solid fa-circle-plus"></i></span></li>
+              
+                </ul>
+            </div>
+            <div class="left">
+                <div class="btn">
+                    <span><a href="#"><div class="fa-solid fa-chevron-left rotate"></div></a></span>
+                </div>
+            </div>
+            </div>
+     <!--slide bar end-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!--home-right-->
+<div class="right">
+<div class="main">
+             <!--nav-->
+     
+     <nav style="position: fixed; left: 200px;background-color: #e7e7e7;height: 60px;z-index: 9;padding: 0 280px;  border-radius: 10px;">
+        <a id="dropdownBtn3" ><i style="z-index: 999;cursor: pointer; position: absolute;font-size: medium;left: 12px;top:25px;color: black;border-radius: 10px 0 0 10px; " class="fa-solid fa-clock-rotate-left"></i></a>
+         <div class="lf_nav">
+           
+             <span id="dropdownBtn4" style="font-size:small ; cursor: pointer;padding-left: 10px;" class=" fa fa-search">
+             <a><span class="fa-solid fa-chevron-down"></span></a></span>
+             <a>|</a>
+             <input type="search" placeholder="Search in Customers (/)" id="hover1" >
+            </div>
+
+ 
+         <!--dropdown and bars top + icon -->  
+        <div class="rt_nav" >
+         
+            <span> 
+               
+                <div class="cont" id="dropdownBtn5">
+                    <div style="transform: translateX(-40px);" class="calculator"><i style="font-size: large;" class="fa-solid fa-calculator"></i></div>
+                <div class="rot">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                </div>
+                    <div class="dropDown-content" id="dropdownCont5">
+                        <div class="quick-create-1">
+                            <p><img src="https://img.icons8.com/fluency-systems-regular/14/null/four-squares.png"/> GENERAL</p>
+                            <p><img src="https://img.icons8.com/ios/14/null/checkout.png"/> SALES</p>
+                            <p  style="position: relative;left: 75px;"><img src="https://img.icons8.com/small/14/null/bag-front-view.png"/> PURCHASES</p>
+                        </div>
+                        <div class="quick-create-2"  >
+                            <div class="sub-quick">
+                                <a href="#"><i class="fa-solid fa-plus"></i> Add Users</a>
+                                <a href="items add.html"><i class="fa-solid fa-plus"></i>  Item</a>
+                                <a href="timesheet  add.html"><i class="fa-solid fa-plus"></i> Log Time</a>
+                                <a href=""><i class="fa-solid fa-plus"></i> Weekly Log</a>
+                            </div>
+                            <div class="sub-quick">
+                                <a href="customersadd.html"><i class="fa-solid fa-plus"></i> Customer</a>
+                                <a href="quoteadd.html"><i class="fa-solid fa-plus"></i> Estimates</a>
+                                <a href="delivery challan add.html"><i class="fa-solid fa-plus"></i> Delivery Challan</a>
+                                <a href="invoiceadd.html"><i class="fa-solid fa-plus"></i> Invoices</a>
+                                <a href=""><i class="fa-solid fa-plus"></i> Recurring Invoices</a>
+                                <a href="customersadd.html"><i class="fa-solid fa-plus"></i> Customer Payment</a>
+                            </div>
+                            <div class="sub-quick">
+                                <a href="expences.html"><i class="fa-solid fa-plus"></i> Expenses</a>
+                                <a href=""><i class="fa-solid fa-plus"></i> Recurring Expenses</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </span>
+
+
+
+<!--dropdown and bars top notification icon --> 
+            <div class="notify">
+                <div id="notify_background" >
+                    <div class="notify_sub">
+                        <div class="notify_sub1">
+                        <p>Notifications</p>
+                        <i id="closeBtnn" style="cursor: pointer;" class="fa-solid fa-xmark  remind-off"></i>
+                    </div>
+                    <div class="notify_sub2">
+                        <a href="" class="notify_sub3">Organization</a>
+                        <a href=""  class="notify_sub4">Announcements</a>
+                    </div>
+                    </div>
+                    <div class="notify_sub5">
+                        <img src="https://img.icons8.com/external-nawicon-detailed-outline-nawicon/130/null/external-mailbox-communication-nawicon-detailed-outline-nawicon-2.png"/>
+                        <span style="font-size: 16px;display: flex;align-items: center;justify-content: center;">Uhh... There are no notifications at the moment.</span>
+                    </div>
+                </div>
+            </div>
+ <!--here that the overlay id-->           <div id="overlay"></div>
+
+
+
+
+
+
+<!--dropdown and bars top settings icon --> 
+<div class="set" id="set">
+    <div class="set_background" >
+        <div class="set_sub">
+            <div class="set_sub1">
+            <p>Settings</p>
+            <i id="closeBtnn" style="cursor: pointer;" class="fa-solid fa-xmark"  ></i>
+        </div>
+    
+          
+        </div>
+        <div class="set_sub2">
+            <span style="font-size:small  ;"  class=" fa fa-search"> <input type="search" placeholder=" Search Settings"> </span>
+                           
+                       </div>
+        
+        <div class="set_sub3">
+            <div >
+                <a href=""><img src="https://img.icons8.com/external-outline-berkahicon/12/null/external-Papers-bookkepping-outline-berkahicon.png"/> Organization Profile</a>
+                <a href=""><img src="https://img.icons8.com/windows/12/null/user-male-circle.png"/> Users & Roles</a>
+                <a href=""><img src="https://img.icons8.com/external-kmg-design-basic-outline-kmg-design/12/null/external-option-ui-essential-kmg-design-basic-outline-kmg-design.png"/>Preferences</a>
+            </div>
+            <div>
+                <a href=""><img src="https://img.icons8.com/ios/12/null/us-dollar-circled--v1.png"/> Currencies</a>
+                <a href=""><img src="https://img.icons8.com/fluency-systems-regular/12/null/divide-2.png"/> Taxes</a>
+            </div>
+            <div>
+                <a href=""><img src="https://img.icons8.com/pulsar-line/12/null/tax.png"/>Expense Category</a>
+            </div>
+            <div>
+                <a href=""><img src="https://img.icons8.com/windows/12/null/paint-palette-with-brush.png"/>Templates</a>
+                <a href=""><img src="https://img.icons8.com/ios/12/null/new-post--v1.png"/> Emails</a>
+                <a href=""><img src="https://img.icons8.com/ios/12/null/sms.png"/> SMS Notification</a>
+                <a href=""><img src="https://img.icons8.com/ios/12/null/appointment-reminders--v1.png"/> Reminders</a>
+                <a href=""><img src="https://img.icons8.com/ios/12/null/monitor--v1.png"/> Online Payments</a>
+                <a href=""><img src="https://img.icons8.com/external-vitaliy-gorbachev-lineal-vitaly-gorbachev/12/null/external-plug-internet-technology-vitaliy-gorbachev-lineal-vitaly-gorbachev.png"/>Integrations</a>
+            </div>
+            <div>
+                <a href=""><img src="https://img.icons8.com/sf-ultralight/12/null/data-backup.png"/> Data Backup</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!--dropdown and bars top my account icon --> 
+<div class="my_account" id="my_account">
+<div class="my-account1">
+    <div class="cross" id="closeBtnn">
+        <img src="https://img.icons8.com/ios/16/null/delete-sign--v1.png"/>
+    </div>
+    <div class="dis-pic"></div>
+    <div class="user-info">
+        <span><small>VEERESHWARAN</small></span>
+        <span><p>USER ID: 60002638836</p> </span>
+        <span><p>Organization ID: 60020978177</p></span>
+        <span><h6>bharathiwebcreation@gmail.com</h6></span>
+        <div class="my-sign">
+            <a style="color: #5DB9D7;" href="">My Account</a>
+            <img style="opacity: 0.5;" src="https://img.icons8.com/material-outlined/20/null/vertical-line.png"/>
+            <a style="color: red;" href="">Sign Out</a>
+        </div>
+    </div>
+</div>
+
+<div class="my-account2">
+    <small style="color: rgb(148, 148, 148);">MY ORGANIZATIONS</small>
+    <a href=""><img src="https://img.icons8.com/external-tanah-basah-detailed-outline-tanah-basah/15/000000/external-setting-user-interface-tanah-basah-detailed-outline-tanah-basah.png"/> Manage</a>
+</div>
+
+<div class="my-account3"> 
+    <div class="comp">
+        <img src="https://img.icons8.com/ios/20/null/sort--v1.png"/>
+    </div>
+    <div class="org">
+        
+        <span><small>Bharathi Web Creation Pvt LTd.,</small></span>
+        <span><p>Organization ID: 60020978177 <img style="padding: 3px;transform: translateY(5px);" src=" https://img.icons8.com/windows/15/null/copy.png"/></p></span>
+        
+    </div>
+    <div class="tick">
+        <img src="https://img.icons8.com/color/22/000000/tiktok-verified-account.png"/>
+    </div>
+</div>
+
+</div>
+
+
+
+
+
+<!--dropdown and bars top profile icon --> 
+<div class="account_right_all" id="account_right_all">
+<div class="account_right">
+    <div class="acc_1">
+        <span><img width="50" height="50" src="https://img.icons8.com/external-outline-agus-raharjo/50/external-account-website-ui-outline-agus-raharjo.png" alt="external-account-website-ui-outline-agus-raharjo"/></span>
+    </div>
+    <div class="acc_2">
+        <span>Veereshwaran</span>
+        <span>bharathiwebcreation@gmail.com</span>
+    </div>
+    <div class="acc_3">
+<span><img width="24" height="24" src="https://img.icons8.com/color/24/delete-sign--v1.png" alt="delete-sign--v1"/></span>
+    </div>
+</div>
+    <div class="acc_4">
+        <span>User ID: 60002638836</span>
+        <span style="font-size: 30px; position:relative;bottom: 22px;">.</span>
+        <span> Organization ID: 60020978177</span>
+    </div>
+
+<div class="account_right_2">
+    <a style="color: rgb(31, 162, 214);" href="">My Account</a>
+    <a style="color: red;" href="">Sign Out</a>
+</div>
+<div class="account_right_3" >
+    <div class="acc_boxtop">
+    <a class="acc_box1" href="">
+        
+            <span><img width="70" height="70" src="https://img.icons8.com/carbon-copy/70/000000/price-tag.png" alt="price-tag"/></span>
+            <span>Help Documents</span>
+        
+    </a>
+    <a  class=" acc_box1" href="">
+       
+            <span></span>
+            <span>FAQs</span>
+        
+    </a>
+    <a class="acc_box1" href="">
+        
+            <span></span>
+            <span>Forum</span>
+        
+    </a>
+</div>
+<div class="acc_boxdown">
+    <a class="acc_box1" href="">
+        
+            <span></span>
+            <span>Video<br> Tutorials</span>
+        
+    </a>
+    <a class="acc_box1" href="">
+        
+            <span></span>
+            <span>Explore Features</span>
+        
+    </a>
+    <a class="acc_box1" href="">
+        
+            <span></span>
+            <span>Migration Guide</span>
+        
+    </a>
+</div>
+<div class="account_right_4">
+    <h4 style="font-weight: 400;padding: 15px;">Need Assistance?</h4>
+    <a href="">
+        <span><img width="15" height="15" src="https://img.icons8.com/ios/15/new-post--v1.png" alt="new-post--v1"/></span>
+        <span style="font-size: 14px;color: rgb(63, 63, 63);"> Send an email <span style="color:  rgb(38, 144, 185);"> ></span></span>
+
+    </a>
+    <a href="">
+        <span style="opacity: 0.5;"><img width="18" height="18" src="https://img.icons8.com/material-outlined/18/video.png" alt="video"/></span>
+        <span style="font-size: 14px;color:  rgb(63, 63, 63);">Register for webinars <span style="color:  rgb(38, 144, 185);"> ></span></span>
+        
+    </a>
+
+</div>
+
+<div class="account_right_5">
+      <a href=""><img style="margin: 20px 10px;" width="24" height="24" src="https://img.icons8.com/color/24/sparkling.png" alt="sparkling"/></a>
+      <a style="margin: 10px;" href="">
+        <h4 style="font-weight: 400;color: black;font-size: 16px">What's New?</h4>
+        <span style="font-size: 12px;color:  rgb(128, 128, 128);">View the latest features and enhancements  <span style="color:  rgb(38, 144, 185);"> ></span></span>
+    
+    </a>
+      </div>
+
+      <div class="account_right_6">
+        <div class="ess">
+            <a href=""><img width="50" height="50" src="https://img.icons8.com/sf-ultralight/50/bag-front-view.png" alt="bag-front-view"/></a>
+            <a style="font-weight: 400;color: black;font-size: 13px" href="">Navigate faster with keyboard shortcuts <span style="color:  rgb(38, 144, 185);"> ></span></a>
+        </div>
+        <div class="ess">
+            <a href=""><img width="50" height="50" src="https://img.icons8.com/sf-ultralight/50/bag-front-view.png" alt="bag-front-view"/></a>
+            <a style="font-weight: 400;color: black;font-size: 13px" href="">Essential guides for your business <span style="color:  rgb(38, 144, 185);"> ></span></a>
+        </div>
+       
+      </div>
+
+
+
+      <div class="account_right_7">
+        <a href="">
+        <div style="width: 60px; height: 60px;background-color: red;"></div>
+        <div>
+            <div>
+                <h4>Download the mobile app</h4>
+                <p>Manage your business operations on the go</p>
+            </div>
+            <div>
+                <i class="fa-brands fa-apple"></i>
+                <i class="fa-brands fa-android"></i>
+                <i class="fa-brands fa-windows"></i>
+            </div>
+        </div>
+    </a>
+      </div>
+
+
+</div>
+
+
+
+
+</div>
+<!--dropdown and bars--> 
+            <span style="position: relative;top: 5px;"><img style="opacity: 0.3;" src="https://img.icons8.com/material-outlined/20/null/vertical-line.png"/></span>
+            <span class="remind" id="dropdownBtn6" style="position: relative;top: 5px;"><a href="#"><img src="https://img.icons8.com/fluency-systems-regular/20/null/appointment-reminders--v1.png"/></a></span>
+            <span class="sett" id="dropdownBtn7" style="position: relative;top: 5px;"><a href="#"><img src="https://img.icons8.com/material-rounded/20/null/settings.png"/></a></span>
+            <span style="position: relative;top: 5px;"><img style="opacity: 0.3;" src="https://img.icons8.com/material-outlined/20/null/vertical-line.png"/></span>
+            <span class="admi"  id="dropdownBtn8" style="position: relative;"><a href="#" style="width: 500px;color: black;"> Rojas Antino</a></span>
+            <span class="adm"  id="dropdownBtn9" style="position: absolute;top: 10px; left: 1125px;"><a href="#"><img src="https://img.icons8.com/small/40/null/user-male-circle.png" style="transform: translateX(130px);"></a></span>
+        
+        
+    </div>
+</nav>
+
+<div class="search-down" id="dropdownCont4">
+    <div class="medium-search" >
+        <a href=""> Customers</a>
+        <a href=""> Invoices</a>
+        <a href=""> Quotes</a>
+        <a href=""> Delivery Chellans</a>
+        <a href=""> Credit Notes</a>
+        <a href=""> Expanses</a>
+        <a href=""> Projects</a>
+        <a href=""> Timesheet</a>
+        <a href=""> Items</a>
+        <a href=""> Tasks</a>
+    </div>
+    <div class="fix-ad-srch">
+    <div class="advanced-search">
+        <div>
+            <a href="" ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAYAAADgKtSgAAAACXBIWXMAAAsTAAALEwEAmpwYAAABiklEQVR4nO2Tv0oDQRDGN6gpVEh2YhA7C2sr9RkUfQO18Q2EdIJnKd5MUsQmpcHGu5lEYidCROtYaqMgeQcVRTyZM2BAE/Y0ZT7Y4ti53/zZb4wZKpG8IJ1FWbfIR5b43CKfAvJOplSfNf8RUG0JiO+BJLLIt4DSAOJrS/ICJK9AvGuiKPUnsEV5BpKbnC+L3XeZUj1riYuA/GFRysnIXpAGlAcF5w+DyV5hFqUQd+XXVpzZOmP9KVcMF/oGRlHKIrcA+dIZ/vV4cucSC75sA8r7tF+dcIOTXADxmUtsFmtr2mWegjlXeB1QrpzgFG4ofKooM05w9bHaTV3hUEgViNvGVbog6mO1W9+qD8J5QHkDZM8kkS5Ix8eF3xYlBpM8WuQnux9kEsG/bCblzna21BXWl9Wcz5vxKFDeFKz3gHJivOZosgQmnumy+ljtFoPiw21LsqcVK/hfCVQzlca42u2HK7zm6EAS9FQQjADxcTxC4tBUKmNmoPK6OiChwcK/EyBguBV/D2X66BMqddjYg5WvkQAAAABJRU5ErkJggg=="> Advanced Search</a>
+        </div>
+       <button>alt + /</button>
+    </div>
+    <div class="advanced-search">
+        <div>
+            <a href="" >  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAACXBIWXMAAAsTAAALEwEAmpwYAAAByUlEQVR4nN2Uv0scURDHH5JoZQQFwTbRGK6xWG/mtElraSRlSkFSpb1oQEiVNBJIlT9AwYt37szqRTmTvZldNYWl/g0KUf8Fw+x6EgKXXWUh4BcePN4bPm9+PufujaD58xFSew5Zl4B00fZ2dnfi8lWPgYDkAli+AcsHZPmIpLvJGclbs7kLdANZZXIreoxbkYd++w34WrLrCoWjwBIjyddbwZHlnUErOweDwFpH0lMkXbUHOjYzzWYfkh4knueRV2sNWKjTjfgJstSQpNEtp1McPkts/bg/EwyBvkTSHQiiCWA5yyoUkLTLQfQiE4ysS9dFeo0sa5mOsH5Clmq2x6SLBvbqMmKFKw4cJKnYzTS8cUTCXKnwrotnLYWkryos891sJ/14HEgucxXPlE6Yaql23Ou6yNoNWPdzpeFGy1c91vxAEmHQHvv7urytT21ArMet1/ODO3CWKrKeI8kekqwki/V7Z6Sn6vvDSPorcYL1/fMwfODyatqP+4F1Nn1Eqrb/M6c2QMj6GVl/2EDdCv4vpT0ve+VGayiJhnW9EHipdtyLJJvA0krhcggsC64IeV+OHqa/oRwiy0lhYOecs/ANaKuwPP8X/QYRRB9UXennYwAAAABJRU5ErkJggg=="> Search across zoho</a>
+        </div>
+        <button>alt + /</button>
+    </div>
+</div>
+</div>
+
+        <!--new-add-4-->
+        <div class="new-add-4" id="dropdownCont3">
+            <h3>Recent activities</h3>
+            <img style="opacity: 0.4;" src="data:image/png;base64,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">
+            <p style="text-align: center;">Your activities in Zoho Invoice will show up here!</p><hr style="border:0.5px solid rgb(221, 221, 221);width: 75%;"> 
+            <p>Create your first transaction 
+                <br> to get started with <br>Zoho Invoice.</p>
+                <div>
+                    <a href=""><i class ="fa fa-file" aria-hidden="true"> </i> Create Invoice</a>
+                    <a href=""><i class='fas fa-receipt'> </i> Create Expense</a>
+                </div>
+         
+
+</div>
+<!--nav end-->
+   
+
+
+
+</div>
+<hr style="border-style:dotted ; border-width:1px;color: rgb(231, 231, 231) ">
+<!--second step-->
+<div class="newwadd" id="dropdownContentcus">
+
+<div class="new-add-3" >
+    <a href="">All Customers</a>
+   <a href="">Active Customers</a>
+   <a href="">CRM Customers</a>
+   <a href="">Duplicate Customers</a>
+   <a href="">Inactive Customers</a>
+   <a href="">Customer Portal Enabled</a>
+   <a href="">Customer Portal Disabled</a>
+   <a href="">Overdue Customers</a>
+   <a href="">Unpaid Customers</a>
+
+</div>
+
+<div style="position: absolute;top: 490px;z-index: 9;   font-size: 12px;padding:15px 20px;;">
+    <a href="" style="color: rgb(24, 127, 196);background-color: white;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);padding:14px 45px;border-top:1px solid rgb(231, 231, 231);border-radius: 0 0 8px 8px"><img style="transform: translateY(4px);" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAuklEQVR4nL2UXQrCMBCEB/Sl9R7+nEKpd/E8RatX0RbsvfQlMrCREnaXNIIDAw2bfLC7Q4E/qQawFVclgCOAAcAbQBDzuwfQ5ACWAG6Tx8FwJ3dNXTMgQXz22tEePMVa7aCBBuPySazVHilklQw2F/SSzX61UdqJgJ04ntM216Wg0QPVP7RWpXPqC0B3bWuNs/7RqO2tLHUzAtnCEWN/yYQsPFAUE8uwcZjTwXImZjueuBFGgy76jczWB84ckkMd2c5gAAAAAElFTkSuQmCC"> New Custom View</a>
+</div>
+</div>
+
+<div class="new-add-14" id="dropdownContcus">
+    <h3>sort by</h3>
+    <a href="">Name</a>
+    <a href="">Company Name</a>
+   <a href="">Receivables (BCY)</a>
+   <a href="">Unused Credits (BCY)</a>
+   <a href="">Created Time</a>
+   <a href="">Last Modified Time</a>
+   
+<span></span>
+   <a href=""><img style="transform: rotate(90deg); transform: translateY(4px);padding-right: 3px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAdElEQVR4nLWTTQqAQAhG375d5xno52pF96jT1Q1mVsZAK6FyrBHcyOfzAxV+igVIgBgy62YNSEBrHJZ1URel0LFYAR2wegEB2IHBYykABzBamjWguZrftlHPgQsiN/Ue2Cx6sUx50qevl5hvu+QXpkLHFeME/8E5SR5XFl0AAAAASUVORK5CYII="> Import Contact</a>
+   <a href=""><img style="transform: rotate(90deg); transform: translateY(4px);padding-right: 3px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAdElEQVR4nLWTTQqAQAhG375d5xno52pF96jT1Q1mVsZAK6FyrBHcyOfzAxV+igVIgBgy62YNSEBrHJZ1URel0LFYAR2wegEB2IHBYykABzBamjWguZrftlHPgQsiN/Ue2Cx6sUx50qevl5hvu+QXpkLHFeME/8E5SR5XFl0AAAAASUVORK5CYII="> Import Contact Persons</a>
+   <span></span>
+   <a href=""><img style="transform: rotate(-90deg); transform: translateY(2px);padding-right: 3px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAaElEQVR4nJ3Suw3CQBBF0SMZ4RQohMxFOCKhFzpAbsGb0QmiMicbWIhBO3ulF149zQfeWIK8cPODp5gJ96x0xZyV9gxZ6YAVp4ykCgWXb2nE409KTXPTOWoScOydqXl7XXcKP+KT/b0NyqgY3AbcwCcAAAAASUVORK5CYII="> Export Contact</a>
+   <a href=""><img style="transform: rotate(-90deg); transform: translateY(2px);padding-right: 3px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAaElEQVR4nJ3Suw3CQBBF0SMZ4RQohMxFOCKhFzpAbsGb0QmiMicbWIhBO3ulF149zQfeWIK8cPODp5gJ96x0xZyV9gxZ6YAVp4ykCgWXb2nE409KTXPTOWoScOydqXl7XXcKP+KT/b0NyqgY3AbcwCcAAAAASUVORK5CYII="> Export Contact Persons</a>
+   <span></span>
+   <a href=""><img style="transform: rotate(-90deg); transform: translateY(2px);padding-right: 3px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAaElEQVR4nJ3Suw3CQBBF0SMZ4RQohMxFOCKhFzpAbsGb0QmiMicbWIhBO3ulF149zQfeWIK8cPODp5gJ96x0xZyV9gxZ6YAVp4ykCgWXb2nE409KTXPTOWoScOydqXl7XXcKP+KT/b0NyqgY3AbcwCcAAAAASUVORK5CYII="> Export Current View</a>
+   <span></span>
+   <a href=""><img style=" transform: translateY(4px);padding-right: 3px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAABBklEQVR4nJ3TTUoDQRCG4QezDLqTuPQA/sVT6EbduMpCQY1xn4AKGo3ieYyKyfGkoAaGmcREP+ihZrq+6u6at5mvNZzmaPqHjvCEVxwuY1jHFN18H2EHbQzz2yUmmVvTBJu4wAfu0cjxgHEWiJzvWQXOcb3ETm9wNm/ysxRvYJAj4kJfVdMqTrJZdyXzOM/fzriVc8Ns7nF6dfCMbaxk0iCNhfbRz7iRzR2lVzzesPeHAu30dCQkB7mL2zlHeK8c4THZaP7WxFau2i+ZZzaxUDcZWKSr5KGmaUISLMT2qyAFXL3MidyaAs8grIDkBVvYLaEcc5EzE+Wq4j+HcenLVFVAsvA6/wBsli4SSVpKtQAAAABJRU5ErkJggg=="> Preferences</a>
+   <span></span>
+   <a href=""><img style=" transform: translateY(4px);padding-right: 3px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA3klEQVR4nO3TvUqDQRCF4Sfa2flD1LS5gfQRC/vch51FvAsDkgtILCOxE0XBwj59sLIKqRUtUioLU3zEb7dW8IWFhR0OO3PO8Fdo4ARD3OMWAxxVajrYKok08YwPjNDHWdzf8YgW3kKsllTwggl2a963cY1XrEpCNyGykXnv4RRLfOWEdjDDfqHtAZ4qp12o/adAe22QabA5DsKYZNAPOmHpIixOVtexGTFJeZITWkXYJhG+dfYwxTx+lRVKsT/EQ6zDONbjHFf4jLaTYJa0gNWkdnERC3uHSxyXBH4X33Q/LKaWVSa0AAAAAElFTkSuQmCC"> Refresh List</a>
+   
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="total">
+<div class="second_step">
+    <div   id="dropdownBtncus">
+       <a href="#"><h2>All Customers <span style="color: skyblue;font-size: 15px;font-weight: bold;" class="fa-solid fa-chevron-down"></span></h2></a> 
+    </div>
+        <!--new add 3-->
+
+    <div>
+        <a href="customersadd.html"><button style="background: rgb(41, 165, 41);color: white;" >New</button></a>
+        <a href="#"><button id="dropdownBtn1cus" style="border: 1px solid black;"><i class="fa-solid fa-ellipsis"></i></button></a>
+      <!--  <a href="#"><button style="background: rgb(230, 189, 6);color: white;" ><i class="fa fa-question"></i></button></a>-->
+       
+    </div>
+    
+    
+</div>
+
+<hr style="border-style:dotted ; border-width:1px;color: rgb(231, 231, 231) ">
+<!--third step-->
+<div class="cus_three">
+    <h3 style="font-weight: 388;font-size: 23px;">Business is no fun without people.</h3>
+    <p style="font-weight: 400;font-size: 13px;color:gray;padding: 10px 0;">Create and manage your contacts, all in one place.</p>
+    <a href="#"><button style="background: rgb(41, 165, 41);color: white;margin-top: 20px;padding: 10px 25px;border-radius:10px;border :none" >CREATE NEW CUSTOMER</button></a>
+    <a style="margin-top: 25px;font-size: 13px;" href="#">Click here to import customers from file</a>
+    <div>
+        <p style="font-weight: 400;font-size: 13px;color:gray;">or using</p>
+        <a href="#">file</a>
+        <a href="#">file</a>
+        <a href="#">file</a>
+    </div>
+</div>
+<!--fourth step-->
+<div class="cus_four" style="background: rgb(247, 247, 247); height: 800px;">
+
+    <p style="font-weight: 400;">Types of contacts</p>
+    <img src="/img/zi-contacts-workflow-1129e1a221 (1).png" alt="">
+    <br><br><hr style="border-style:dotted ; border-width:1px;color: rgb(224, 224, 224) ;width: 800px;"><br><br>
+    
+    <span>
+        <p style="margin-bottom: 20px;">In the Contacts section, you can:</p>
+    <p style="font-size: 13px;"><i class="fa-regular fa-circle-check" > </i> Invite your customers to the Customer Portal</p>
+    <p style="font-size: 13px;"><i class="fa-regular fa-circle-check" > </i> Run customer statement report</p>
+    <p style="font-size: 13px;"><i class="fa-regular fa-circle-check" > </i> Set a currency to invoice your customers.<a href=""> Learn More</a></p>
+    <p style="font-size: 13px;"> <i class="fa-regular fa-circle-check" > </i> View transaction history for each customer</p>
+    <p style="font-size: 13px;"> <i class="fa-regular fa-circle-check" > </i> Request feedback for your service</p>
+</span>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+</body>
+<script src="/js/left side.js"></script>
+<script src="/js/nav.js"></script>
+<script src="/js/customers.js"></script>
+</html>

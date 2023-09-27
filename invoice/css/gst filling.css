@@ -1,0 +1,234 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+body{
+    box-sizing: border-box;
+    font-family: poppins;
+
+    overflow-x: hidden;
+  
+   
+    
+}
+a{
+    text-decoration: none;
+}
+/* side bar design*/
+.sidebar{
+    background: black;
+    width: 200px;
+    min-height: 100vh;
+    position: fixed;
+    z-index:99;
+}
+.left h4{
+    padding: 20px;
+    color: white; 
+    background: rgb(48, 47, 47);
+    position: relative;
+    bottom: 20px;
+}
+
+.left{
+   padding-top: 20px;
+}
+
+.left ul{
+    list-style: none;
+    cursor: pointer;
+}
+.left li {
+    margin:0 8px;
+ padding: 6px 15px;
+ width: 150px;
+ background: rgb(65, 65, 65);
+ border-radius:8px;
+}
+.left li:hover{
+    background:rgb(107, 107, 107);
+    border-radius:8px;
+    margin:0 8px;
+    padding: 6px 15px;
+    width: 150px;
+}
+.left li i{
+    padding-right: 10px;
+    width: 20px;
+    color :white;
+}
+.left li img{
+    padding-right: 10px;
+    position: relative;
+    top: 6px;
+    right: 3px;
+    width: 20px;
+}
+.left li a{
+    text-decoration: none;
+    font-size:small;
+    color: white;
+   
+
+}
+.left .btn{
+    position: fixed;
+    bottom: 0;
+    width: 200px;
+   
+}
+.btn span a{
+    color: white; 
+    background: rgb(65, 65, 65);
+    padding: 6px 47.3%;
+   font-size: 15px;
+
+ 
+}
+ .btn span a .rotate {
+    transition: all .5s linear;
+    
+}
+ .btn span a .rotate.down {
+
+    transform:rotate(180deg);
+ 
+}
+/*end*/
+
+
+
+/*main class design*/
+.right{
+    position: relative;
+    left: 200px
+}
+
+.main{
+ height: 50px;   
+
+}
+
+.main nav{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 200px;
+   
+}
+
+.lf_nav{
+   
+    background-color:  rgb(245, 245, 245);
+    position: relative;
+    right: 565px;
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid rgb(231, 231, 231);
+    outline: none;
+}
+
+.lf_nav:hover{
+    border: 1px solid skyblue;
+}
+
+.lf_nav a  {
+  
+   color: gray;
+}
+.lf_nav a :nth-of-type(1) {
+   font-size:xx-small;
+    color: rgb(0, 217, 255);
+ }
+.lf_nav input{
+    border: none;
+    background-color: rgb(245, 245, 245);
+    padding: 5px ;
+    outline: none;
+    
+}
+.rt_nav{
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+    
+
+}
+/*nav end */
+
+
+/*second step*/
+.total{
+    position: relative;
+    right: 100px;
+ 
+ }
+.second_step {
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    height: 120px;
+    gap: 400px;
+    background: rgb(243, 243, 243);
+}
+
+.second_step div:nth-of-type(2){
+    display: flex;
+ padding:20px;
+   
+}
+.second_step h2{
+    font-weight: 500;
+    color: black;
+    font-size: 18px;
+}
+.second_step button{
+    padding:10px 15px;
+    border: none;
+    border-radius: 10px;
+    margin: 0 6px;
+}
+/*second step*/
+.summery{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+    position: relative;
+    left: 140px;
+    margin: 20px 0;
+} 
+ .box_one{
+    width: 900px;
+    height: 130px;
+    border: 1px solid rgb(230, 230, 230);
+    margin: 11px 0;
+    box-shadow: 1px 1px 1px 1px rgba(99, 99, 99, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    padding-left: 30px;
+   
+
+}
+.box_one p{
+    font-size: small;
+   
+
+}
+.box_one button{
+    background: rgb(241, 241, 241);
+    padding: 7px 10px;
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 6px;
+ 
+    
+}
+.box_one h3{
+    font-weight: normal;
+
+    
+}

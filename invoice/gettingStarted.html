@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <link rel="stylesheet" href="css/gettingStarted.css">
+    <link rel="stylesheet" href="css/left side.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="js/left side.js"></script>
+
+</head>
+<body>
+     <!--slide bar start-->
+     <div class="sidebar">
+        <div class="left">
+            <div>
+                <h4>LoGo</h4>
+            </div>
+            <ul>
+                <li id="fli1"><i class="fa-solid fa-house"></i><a href="index.html">Home</a><span class="fa1"><i class="fa-solid fa-circle-plus"></i></span></li>
+                <li id="fli2"><i class="fa-solid fa-user"></i><a href="customers.html">Customers</a><span class="fa2"><a href="customersadd.html"><i class="fa-solid fa-circle-plus add"></i></a></span></li>
+                <li id="fli3"><i class="fa-solid fa-bag-shopping"></i><a href="items.html">Items</a><span class="fa3"><a href="items add.html"><i class="fa-solid fa-circle-plus"></i></a></span></li>
+                
+            </ul>
+        </div>
+        <div class="left">
+            <ul>
+                <li id="fli4" ><i class="fa-solid fa-calculator"></i><a href="estimates.html">Estimates</a><span class="fa4"><a href="quoteadd.html"><i class="fa-solid fa-circle-plus"></i></a></span></li>
+                <li id="fli5"><i  class="fa-solid fa-truck "></i><a href="delivery chellans.html">Delivery Chellans</a><span class="fa5"><a href="delivery challan add.html"><i class="fa-solid fa-circle-plus"></i></a></span></li>
+                <li id="fli6"><i class="fa fa-file" aria-hidden="true"></i><a href="invoice.html">Invoices</a><span class="fa6"><a href="invoiceadd.html"><i class="fa-solid fa-circle-plus"></i></a></span></li>
+                <li id="fli7"><i class="fa-solid fa-file-arrow-down"></i><a href="payment recived.html">Payment Recived</a><span class="fa7"><a href="#"><i class="fa-solid fa-circle-plus"></i></a></span></li>
+            </ul>
+        </div>
+        <div class="left">
+            <ul>
+         
+                <li id="fli8"><i class='fas fa-receipt'></i><a href="expences.html">Expenses</a><span class="fa8"><a href="expences add expence.html"><i class="fa-solid fa-circle-plus"></i></a></span></li>
+            </ul>
+        </div>
+        <div class="left">
+            <ul>
+                <li id="fli9"><i class="fa-solid fa-calendar-days"></i><a href="timesheet project.html">Timesheet</a><span class="fa9"><a href="timesheet  add.html"><i class="fa-solid fa-circle-plus"></i></a></span></li>
+                <!--  <li  style="background: #5DB9D7;"><img src="https://img.icons8.com/material-sharp/24/null/math-book.png"/><a href="gst filling.html">GST Filing</a></li>-->
+                <li id="fli10"><i class="fa-sharp fa-solid fa-square-poll-vertical"></i><a href="report.html">Reports</a><span class="fa10"></span></li>
+          
+            </ul>
+        </div>
+        <div class="left">
+            <div class="btn">
+                <span><a href="#"><div class="fa-solid fa-chevron-left rotate"></div></a></span>
+            </div>
+        </div>
+        </div>
+ <!--slide bar end-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!--home-right-->
+<div class="right">
+<div class="main" style="background: rgb(255, 250, 250);">
+     <!--nav-->
+     
+     <nav>
+         <a href="#"><i style="z-index: 99; position: absolute;left: 20px;top: 17px;color: black; " class="fa-solid fa-clock-rotate-left"></i></a>
+         <div class="lf_nav">
+            
+            <span style="font-size:small ;" class=" fa fa-search"> </span>
+            <a href=""><span class="fa-solid fa-chevron-down"></span></a>
+            <a href="">|</a>
+            <input type="search" placeholder="Search in Customers (/)">
+        </div>
+
+         <!--dropdown and bars top + icon -->  
+        <div class="rt_nav" >
+         
+            <span>
+                <div class="cont" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="dropdown  dropDown-content" id="myDropdown" onclick="myFunction()">
+                        <div class="quick-create-1">
+                            <p><img src="https://img.icons8.com/fluency-systems-regular/14/null/four-squares.png"/> GENERAL</p>
+                            <p><img src="https://img.icons8.com/ios/14/null/checkout.png"/> SALES</p>
+                            <p  style="position: relative;left: 75px;"><img src="https://img.icons8.com/small/14/null/bag-front-view.png"/> PURCHASES</p>
+                        </div>
+                        <div class="quick-create-2">
+                            <div class="sub-quick">
+                                <a href="#"><i class="fa-solid fa-plus"></i> Add Users</a>
+                                <a href=""><i class="fa-solid fa-plus"></i>  Item</a>
+                                <a href=""><i class="fa-solid fa-plus"></i> Log Time</a>
+                                <a href=""><i class="fa-solid fa-plus"></i> Weekly Log</a>
+                            </div>
+                            <div class="sub-quick">
+                                <a href=""><i class="fa-solid fa-plus"></i> Customer</a>
+                                <a href=""><i class="fa-solid fa-plus"></i> Estimates</a>
+                                <a href=""><i class="fa-solid fa-plus"></i> Delivery Challan</a>
+                                <a href=""><i class="fa-solid fa-plus"></i> Invoices</a>
+                                <a href=""><i class="fa-solid fa-plus"></i> Recurring Invoices</a>
+                                <a href=""><i class="fa-solid fa-plus"></i> Customer Payment</a>
+                            </div>
+                            <div class="sub-quick">
+                                <a href=""><i class="fa-solid fa-plus"></i> Expenses</a>
+                                <a href=""><i class="fa-solid fa-plus"></i> Recurring Expenses</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </span>
+
+
+
+<!--dropdown and bars top notification icon --> 
+            <div class="notify">
+                <div class="notify_background">
+                    <div class="notify_sub">
+                        <div class="notify_sub1">
+                        <p>Notifications</p>
+                        <i style="cursor: pointer;" class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="notify_sub2">
+                        <a href="" class="notify_sub3">Organization</a>
+                        <a href=""  class="notify_sub4">Announcements</a>
+                    </div>
+                    </div>
+                    <div class="notify_sub5">
+                        <img src="https://img.icons8.com/external-nawicon-detailed-outline-nawicon/130/null/external-mailbox-communication-nawicon-detailed-outline-nawicon-2.png"/>
+                        <span style="font-size: 16px;display: flex;align-items: center;justify-content: center;">Uhh... There are no notifications at the moment.</span>
+                    </div>
+                </div>
+            </div>
+
+<!--dropdown and bars top settings icon --> 
+<div class="set">
+    <div class="set_background">
+        <div class="set_sub">
+            <div class="set_sub1">
+            <p>Settings</p>
+            <i style="cursor: pointer;" class="fa-solid fa-xmark"></i>
+        </div>
+    
+          
+        </div>
+        <div class="set_sub2">
+            <span style="font-size:small  ;"  class=" fa fa-search"> <input type="search" placeholder=" Search Settings"> </span>
+                           
+                       </div>
+        
+        <div class="set_sub3">
+            <div >
+                <a href=""><img src="https://img.icons8.com/external-outline-berkahicon/12/null/external-Papers-bookkepping-outline-berkahicon.png"/> Organization Profile</a>
+                <a href=""><img src="https://img.icons8.com/windows/12/null/user-male-circle.png"/> Users & Roles</a>
+                <a href=""><img src="https://img.icons8.com/external-kmg-design-basic-outline-kmg-design/12/null/external-option-ui-essential-kmg-design-basic-outline-kmg-design.png"/>Preferences</a>
+            </div>
+            <div>
+                <a href=""><img src="https://img.icons8.com/ios/12/null/us-dollar-circled--v1.png"/> Currencies</a>
+                <a href=""><img src="https://img.icons8.com/fluency-systems-regular/12/null/divide-2.png"/> Taxes</a>
+            </div>
+            <div>
+                <a href=""><img src="https://img.icons8.com/pulsar-line/12/null/tax.png"/>Expense Category</a>
+            </div>
+            <div>
+                <a href=""><img src="https://img.icons8.com/windows/12/null/paint-palette-with-brush.png"/>Templates</a>
+                <a href=""><img src="https://img.icons8.com/ios/12/null/new-post--v1.png"/> Emails</a>
+                <a href=""><img src="https://img.icons8.com/ios/12/null/sms.png"/> SMS Notification</a>
+                <a href=""><img src="https://img.icons8.com/ios/12/null/appointment-reminders--v1.png"/> Reminders</a>
+                <a href=""><img src="https://img.icons8.com/ios/12/null/monitor--v1.png"/> Online Payments</a>
+                <a href=""><img src="https://img.icons8.com/external-vitaliy-gorbachev-lineal-vitaly-gorbachev/12/null/external-plug-internet-technology-vitaliy-gorbachev-lineal-vitaly-gorbachev.png"/>Integrations</a>
+            </div>
+            <div>
+                <a href=""><img src="https://img.icons8.com/sf-ultralight/12/null/data-backup.png"/> Data Backup</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--dropdown and bars top my account icon --> 
+<div class="my-account">
+<div class="my-account1">
+    <div class="cross">
+        <img src="https://img.icons8.com/ios/16/null/delete-sign--v1.png"/>
+    </div>
+    <div class="dis-pic"></div>
+    <div class="user-info">
+        <span><small>VEERESHWARAN</small></span>
+        <span><p>USER ID: 60002638836</p> </span>
+        <span><p>Organization ID: 60020978177</p></span>
+        <span><h6>bharathiwebcreation@gmail.com</h6></span>
+        <div class="my-sign">
+            <a style="color: rgb(70, 151, 184);" href="">My Account</a>
+            <img style="opacity: 0.5;" src="https://img.icons8.com/material-outlined/20/null/vertical-line.png"/>
+            <a style="color: red;" href="">Sign Out</a>
+        </div>
+    </div>
+</div>
+
+<div class="my-account2">
+    <small style="color: rgb(148, 148, 148);">MY ORGANIZATIONS</small>
+    <a href=""><img src="https://img.icons8.com/external-tanah-basah-detailed-outline-tanah-basah/15/000000/external-setting-user-interface-tanah-basah-detailed-outline-tanah-basah.png"/> Manage</a>
+</div>
+
+<div class="my-account3"> 
+    <div class="comp">
+        <img src="https://img.icons8.com/ios/20/null/sort--v1.png"/>
+    </div>
+    <div class="org">
+        
+        <span><small>Bharathi Web Creation Pvt LTd.,</small></span>
+        <span><p>Organization ID: 60020978177 <img style="padding: 3px;transform: translateY(5px);" src=" https://img.icons8.com/windows/15/null/copy.png"/></p></span>
+        
+    </div>
+    <div class="tick">
+        <img src="https://img.icons8.com/color/22/000000/tiktok-verified-account.png"/>
+    </div>
+</div>
+
+
+
+
+
+</div>
+
+
+<!--dropdown and bars--> 
+            <span><img style="opacity: 0.3;" src="https://img.icons8.com/material-outlined/20/null/vertical-line.png"/></span>
+            <span><a href="#"><img src="https://img.icons8.com/fluency-systems-regular/20/null/appointment-reminders--v1.png"/></a></span>
+            <span><a href="#"><img src="https://img.icons8.com/material-rounded/20/null/settings.png"/></a></span>
+            <span><a href="#"><img src="https://img.icons8.com/material-outlined/20/null/help.png"/></a></span>
+            <span><img style="opacity: 0.3;" src="https://img.icons8.com/material-outlined/20/null/vertical-line.png"/></span>
+            <span><a href="#" style="width: 200px;"></a></span>
+            <span ><a href="#"><img src="https://img.icons8.com/small/40/null/user-male-circle.png" style="
+                transform: translateX(100px);opacity: 0.3;"></a></span>
+        
+        
+    </div>
+</nav>
+
+<!--nav-->
+
+</div>
+
+<div class="gettingStart">
+<div class="headStart">
+    <div class="insideHead">
+        <img width="50" height="50" style="margin-right: 15px; background-color: ghostwhite; " src="https://img.icons8.com/emoji/50/party-popper.png" alt="party-popper"/>
+        <div class="insideHead2"><h2 style="font-weight: 400;">Welcome, Santhosh!</h2>
+<small>Your journey to top-tier invoicing starts here. Configure Zoho Invoice the way you want with our guides and help resources.</small></div>
+<button style="margin-left: 450px; background-color: ghostwhite; border: none; border-radius: 5px;"><img width="20" height="20"  src="https://img.icons8.com/ios/30/delete-sign--v1.png" alt="delete-sign--v1"/>
+</button>
+</div>
+</div>
+<form action="">
+<div class="part">
+
+<div class="leftPart">
+
+<div class="step1">
+<div class="main1">
+   
+ <p>1. What do you want your invoices to look like? <img width="15" height="15" src="https://img.icons8.com/color/15/checked--v1.png" alt="checked--v1"/></p>
+<label for="" style="color: #408DFB; cursor: pointer;">Edit</label>
+</div>
+<fieldset>
+    <legend><small> STEP <span style="color: #408DFB;">1/3</span></small> </legend>
+    <div class="field1">
+        <p style="font-size:small; font-weight: 600;">1. What do you want your invoices to look like?</p>
+        
+        <small style="font-weight: 400; font-size: smaller;">Pick a template that suits your business and customize it to reflect your branding.</small>
+    
+    </div>
+    <div class="field2">
+        <label for="" style="margin-bottom: 5px;">Invoice Template</label><br>
+        <span>Continental <img wi dth="15" height="15" src="https://img.icons8.com/ios-glyphs/15/expand-arrow--v1.png" > </span>
+       
+        <div class="field2Sub1">
+            <input type="search" placeholder="search">
+            <div class="in sub1">Standard Template <img width="15" height="15" src="https://img.icons8.com/color/15/checked--v1.png" alt="checked--v1"/></div>
+            <div class="in sub2" >Spreadsheet Template <img width="15" height="15" src="https://img.icons8.com/color/15/checked--v1.png" alt="checked--v1"/></div>
+            <div class="in sub3">compact <img width="15" height="15" src="https://img.icons8.com/color/15/checked--v1.png" alt="checked--v1"/></div>
+            <div class="in sub4">continental <img width="15" height="15" src="https://img.icons8.com/color/15/checked--v1.png" alt="checked--v1"/></div>
+            <div class="in sub5">Simple <img width="15" height="15" src="https://img.icons8.com/color/15/checked--v1.png" alt="checked--v1"/></div>
+        </div>
+
+
+
+    </div>
+
+    <div class="field3">
+        <label for="">Organization Logo</label><br>
+        <label for="san" class="upIput"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAjElEQVR4nGNgGAUUA/sp/3lAmDJD+v8LOPT+PuXQ8/u88+T/wuQb1PtrhX3P7zlg3PtrBWWu6vmZAMIUGUKWQa7d/8VAmFiDXHGox6nBvvtPLAgT7VJcEh4T/7ODMPEGdf+Jdej9lc5AJHDo/ZWOzaUMThP+i9v3/tro0PNrNzHYvvfXRqxhNAoYcAEAB6duQXgE3bYAAAAASUVORK5CYII=">
+        Upoload
+        </label>
+      <input type="file" id="san" style="display: none;"> 
+        </div>
+
+        <div class="field4">
+            <h4 style="font-weight: 400;"> COLORS & FONTS </h4>
+           <div class="color">
+            <div class="backgroundColor"> <input type="color"> <label for="" style="margin-left: 10px;">Background Color</label> </div>
+
+            <div class="lableColor"> <input type="color"> <label for="" style="margin-left: 10px;"> Lable Color</label> </div>
+
+           </div>
+            <div class="fontColor">
+            <input type="color"> <label for="fontColor" style="margin-left: 10px;"> Font Color</label>
+            </div>
+
+        </div>
+        <div class="bottom1">
+            <p><span style="color: #408DFB ;">NOTE :</span> <span style="font-size: 12px;"> You can find  even more  customization options  from Settings <big>></big> Templates </span></p>
+        </div>
+        <div class="save">
+            <button>Save & Proceed</button>
+        </div>
+</fieldset>
+</div>
+<div class="step2">
+    <div class="main2">
+   
+        <p>2.Empower your customers with their very own portal  </p>
+       <label for="" style="color: #408DFB; cursor: pointer;">Set up</label>
+       </div>
+       <fieldset>
+        <legend><small> STEP <span style="color: #408DFB;">2/3</span></small> </legend>
+
+        <div class="empower">
+            <h4 style="font-weight: 500;">2. Empower your customers with their very own portal</h4>
+            <p style="margin-top: 5px;">The Customer Portal lets your customers view, pay, and manage all of their <br> transactions online.</p>
+        </div>
+
+        <div class="Porta">
+        <label for="">Portal Name</label><br>
+        <input type="text" value="santhoshwebcreation">
+       <p style="margin-top: 5px;">Portal URL : https://invoice.zoho.in/portal/santhoshwebcreation</p>
+
+        </div>
+        <div class="bottom2">
+            <p><span style="color: #408DFB ;">NOTE :</span> <span style="font-size: 12px;"> This name will be displayed in the URL that's used to access the portal. You can configure a lot more preferences for the portal from Settings.</span></p>
+        </div>
+        <div class="save1">
+            <button style="padding: 5px; margin-right: 8px; background-color: ghostwhite;"><img width="20" height="20" src="https://img.icons8.com/ios-glyphs/20/back.png" alt="back"/></button>
+            <button>Save & Proceed</button>
+        </div>
+       </fieldset>
+</div>
+
+<div class="step3">
+
+    <div class="main3">
+   
+        <p>3. Make the most of Zoho Invoice </p>
+       <label for="" style="color: #408DFB; cursor: pointer;">Set up</label>
+       </div>
+
+       <fieldset>
+        <legend><small> STEP <span style="color: #408DFB;">3/3</span></small> </legend>
+       
+       <div class="zohoIn">
+        <h4 style="font-weight: 500;">3. Make the most of Zoho Invoice</h4>
+        <p style="margin-top: 5px;">Enable additional modules that you may use. These settings can be changed any <br>time.</p>
+    </div>
+
+    <div class="selectModuls">
+        <p>Select Modules</p>
+        <div class="topModuls">
+            <span><input type="checkbox" checked><label for="">Quotes</label></span>
+            <div class="dchallan"><input type="checkbox" checked><label for="">Delivery Challans</label></div>
+            <span><input type="checkbox" checked> <label for="">Timesheet</label></span>
+        </div>
+
+        <div class="middleModuls">
+            <span><input type="checkbox"><label for="">Retainer Invoices</label></span>
+            <span><input type="checkbox"><label for="">Recurring Invoice</label></span>
+            <span><input type="checkbox"><label for="">Recurring Expense</label></span>
+        </div>
+
+        <div class="bottomModuls">
+            <span><input type="checkbox"><label for="">Credit Note</label></span>
+           
+            <span><input type="checkbox"><label for="">Payment Links</label></span>
+        </div>
+        <div class="save2">
+            <button style="padding: 5px; margin-right: 8px; background-color: ghostwhite;"><img width="20" height="20" src="https://img.icons8.com/ios-glyphs/20/back.png" alt="back"/></button>
+            <button>Complete Setup</button>
+        </div>
+    </fieldset>
+    </div>
+
+</div>
+
+</div>
+
+<div class="rightPart">
+<div class="innerRight">
+    <div class="tamplete">
+        <p style="font-size: x-small;">TEMPLATE</p>
+        <p style="font-size: x-small; font-weight: 600;">Standard</p>
+    </div>
+    <div class="topfeild">
+    <div class="logoLeft">
+        <img src="img/logo.png" alt="" style="height: 70px; width: 100px;"><p style="height: 12px ; width: 80px; background-color: #cdd3da; margin-left: 15px; border-radius: 3px;"></p>
+    </div>
+    <div class="logoright">
+        <h4 style="font-weight: 500;"> INVOICE</h4><label for="" style="font-size: smaller;">#INV0291</label>
+    </div>
+</div>
+<div class="middleFeild">
+    <div class="middleLeft">
+   <div class="line1"> <label for="">Invoice Date <span style="margin-left: 5px;">:</span> </label><p>12.02.2023</p></div>
+   <div class="line2">  <label for="">Due Date <span style="margin-left: 25px;">:</span></label> <p style="margin-right:6px;">25.02.2023</p></div>
+    </div>
+    <div class="middleRight">
+       <div class="blank1">
+        <p style="height: 10px ; width: 60px; background-color: #cdd3da; margin-left: 10px; border-radius: 3px;"></p>
+         <p style="height: 10px ; width: 10px; background-color: #cdd3da; margin-left: 10px; border-radius: 3px;"></p>
+         <p style="height: 10px ; width: 60px; background-color: #cdd3da; margin-left: 10px; border-radius: 3px;"></p>
+        </div>
+       <div class="blank2"> <p style="height: 10px ; width: 40px; background-color: #cdd3da; margin-left: 10px; border-radius: 3px;"></p>
+         <p  style="height: 10px ; width: 10px; background-color: #cdd3da; margin-left: 30px; border-radius: 3px;"></p> 
+         <p style="height: 10px ; width: 40px; background-color: #cdd3da; margin-left: 10px; border-radius: 3px;"></p>
+         </div>
+    </div>
+
+    
+
+
+</div>
+
+<table style="font-size: smaller; padding: 30px 0 0 30px;">
+    <tr style="background-color: #cdd3da;" >
+      <th >Item & Description</th>
+      <th style="margin-left: 20px; width: 100px;">Qty</th>
+      <th>Rate</th>
+      <th>Amount</th>
+    </tr>
+    <tr>
+        <td>MacBook Pro <br> <span style="font-size: x-small;">(14.2-inch) Liquid Retina</span></td>
+        <td style="margin-left: 20px; width: 100px ; padding-left: 20px; text-align: center;">1</td>
+        <td style="width: 100px;"> 1,54,000.00</td>
+        <td>1,54,000.00</td>
+    </tr>
+  </table>
+</div>
+
+
+</div>
+
+</div>
+
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+    <script src="/js/index.js"></script>
+</body>
+<script>
+    /*line 88 script (bar)*/
+    function myFunction(x){
+        x.classList.toggle("rot")
+    }
+     /*line 91 script (dropdown)*/
+
+     function myFunction(){
+        document.getElementById().classList.toggle("show")
+     }
+</script>
+</html>

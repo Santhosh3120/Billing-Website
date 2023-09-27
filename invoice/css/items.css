@@ -1,0 +1,157 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+body{
+    box-sizing: border-box;
+    font-family: poppins;
+
+    overflow-x: hidden;
+  
+   
+    
+}
+/*second step*/
+
+.total{
+    position: relative;
+    right: 100px;
+ 
+ }
+.second_step {
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    gap: 700px;
+}
+
+.second_step div:nth-of-type(2){
+    display: flex;
+ padding:20px;
+   
+}
+.second_step h2{
+    font-weight: 500;
+    color: black;
+    transform: translateX(-8px);
+}
+.second_step button{
+    padding:10px 15px;
+    border: none;
+    border-radius: 10px;
+    margin: 0 6px;
+}
+
+
+#dropdownContentitem{
+    display: none ;/*none----------------------------------------------------------------------------------*/
+    
+}
+
+.new-add-3{
+    
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    transform: translateX(750px);
+    top: 115px;
+    border-radius: 10px 10px 0 0;
+    z-index: 1;
+    display: grid;
+    left: -730px;
+    
+}
+.new-add-3 a{
+    font-size: 12px;
+    margin: 6px ;
+    padding:6px 20px;
+    border-radius: 8px;
+   
+    color: black;
+}
+.new-add-3 a:hover{
+    font-size: 12px;
+    background-color: #5DB9D7;
+    margin: 6px ;
+    padding:6px 20px;
+    border-radius: 8px;
+   
+    color: black;
+}
+.new-add-4item{
+    
+    position: absolute;
+    width: 180px;
+    height: 420px;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    transform: translateX(750px);
+    top: 115px;
+    border-radius: 10px 10px  ;
+    z-index: 1;
+    display: grid;
+    left: 350px;
+   display: none ;/*none----------------------------------------------------------------------------------*/
+    
+}
+.new-add-4item h3{
+    font-size: 14px;
+    color: rgb(158, 158, 158);
+    font-weight: 400;
+   text-transform: uppercase;
+   padding: 15px 20px;
+}
+.new-add-4item a{
+    font-size: 12px;
+    margin: 5px ;
+    padding:5px 15px;
+    border-radius: 8px;
+    color: black;
+}
+.new-add-4item span{
+   border: 1px solid rgb(236, 236, 236);
+ height: 0;
+}
+.new-add-4item a:hover{
+    font-size: 12px;
+    background-color: #5DB9D7;
+    margin: 5px ;
+    padding:5px 15px;
+    border-radius: 8px;
+   
+    color: black;
+}
+/*third step*/
+table{
+    width:100vw;
+    border: 1px solid rgb(224, 224, 224);
+    font-size:small;
+    color: rgb(122, 122, 122);
+     padding: 7px 0;
+    
+}
+.third_step {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 12px;
+    color: rgb(71, 71, 71);
+    margin: 7px 0;
+
+}
+.third_step a {
+    color: rgb(117, 117, 117);
+}
+/*four step*/
+.end{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: rgb(175, 175, 175);
+    margin: 16px 0;
+    transform: translateX(-100px);
+    
+}
